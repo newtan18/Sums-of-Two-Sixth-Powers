@@ -1,0 +1,652 @@
+Magma V2.26-9     Wed Jan 19 2022 14:53:41 on weil     [Seed = 2938548976]
+
++-------------------------------------------------------------------+
+|       This copy of Magma has been made available through a        |
+|                   generous initiative of the                      |
+|                                                                   |
+|                         Simons Foundation                         |
+|                                                                   |
+| covering U.S. Colleges, Universities, Nonprofit Research entities,|
+|               and their students, faculty, and staff              |
++-------------------------------------------------------------------+
+
+Type ? for help.  Type <Ctrl>-D to quit.
+
+Loading file "step5-highrank.txt"
+Loading "highrank.txt"
+Part 1 - Finding unconditional rank bounds on all 6 curves.
+Working on k = 1828010.
+Doing 3-isogeny descent on E3.
+Rank upper bound is 1.
+Doing 3-isogeny descent on E4.
+Rank upper bound is 4.
+Doing 3-isogeny descent on E6.
+Rank upper bound is 2.
+Doing two-descent on E5.
+Rank bound before Cassels-Tate is 1.
+Doing the Cassels-Tate pairing.
+Rank bound after Cassels-Tate is 1.
+Unconditional ranks are [ 3, 5, 1, 4, 1, 2 ].
+Working on k = 9703954.
+Doing 3-isogeny descent on E3.
+Rank upper bound is 3.
+Doing 3-isogeny descent on E4.
+Rank upper bound is 2.
+Doing 3-isogeny descent on E6.
+Rank upper bound is 2.
+Doing two-descent on E5.
+Rank bound before Cassels-Tate is 1.
+Doing the Cassels-Tate pairing.
+Rank bound after Cassels-Tate is 1.
+Unconditional ranks are [ 5, 3, 3, 2, 1, 2 ].
+Working on k = 13876354.
+Doing 3-isogeny descent on E3.
+Rank upper bound is 5.
+Doing 3-isogeny descent on E4.
+Rank upper bound is 2.
+Doing 3-isogeny descent on E6.
+Rank upper bound is 4.
+Doing two-descent on E5.
+Rank bound before Cassels-Tate is 1.
+Doing the Cassels-Tate pairing.
+Rank bound after Cassels-Tate is 1.
+Unconditional ranks are [ 5, 3, 5, 2, 1, 4 ].
+Working on k = 27702362.
+Doing 3-isogeny descent on E3.
+Rank upper bound is 1.
+Doing 3-isogeny descent on E4.
+Rank upper bound is 2.
+Doing 3-isogeny descent on E6.
+Rank upper bound is 2.
+Doing two-descent on E5.
+Rank bound before Cassels-Tate is 1.
+Doing the Cassels-Tate pairing.
+Rank bound after Cassels-Tate is 1.
+Unconditional ranks are [ 3, 5, 1, 2, 1, 2 ].
+Working on k = 36512282.
+Doing 3-isogeny descent on E3.
+Rank upper bound is 3.
+Doing 3-isogeny descent on E4.
+Rank upper bound is 2.
+Doing 3-isogeny descent on E6.
+Rank upper bound is 2.
+Doing two-descent on E5.
+Rank bound before Cassels-Tate is 1.
+Doing the Cassels-Tate pairing.
+Rank bound after Cassels-Tate is 1.
+Unconditional ranks are [ 3, 5, 3, 2, 1, 2 ].
+Working on k = 36562178.
+Doing 3-isogeny descent on E3.
+Rank upper bound is 1.
+Doing 3-isogeny descent on E4.
+Rank upper bound is 2.
+Doing 3-isogeny descent on E6.
+Rank upper bound is 2.
+Doing two-descent on E5.
+Rank bound before Cassels-Tate is 3.
+Doing the Cassels-Tate pairing.
+Rank bound after Cassels-Tate is 1.
+Unconditional ranks are [ 3, 5, 1, 2, 1, 2 ].
+Working on k = 37796474.
+Doing 3-isogeny descent on E3.
+Rank upper bound is 1.
+Doing 3-isogeny descent on E4.
+Rank upper bound is 2.
+Doing 3-isogeny descent on E6.
+Rank upper bound is 2.
+Doing two-descent on E5.
+Rank bound before Cassels-Tate is 1.
+Doing the Cassels-Tate pairing.
+Rank bound after Cassels-Tate is 1.
+Unconditional ranks are [ 3, 5, 1, 2, 1, 2 ].
+Working on k = 39299402.
+Doing 3-isogeny descent on E3.
+Rank upper bound is 1.
+Doing 3-isogeny descent on E4.
+Rank upper bound is 2.
+Doing 3-isogeny descent on E6.
+Rank upper bound is 2.
+Doing two-descent on E5.
+Rank bound before Cassels-Tate is 1.
+Doing the Cassels-Tate pairing.
+Rank bound after Cassels-Tate is 1.
+Unconditional ranks are [ 3, 5, 1, 2, 1, 2 ].
+Working on k = 41559842.
+Doing 3-isogeny descent on E3.
+Rank upper bound is 1.
+Doing 3-isogeny descent on E4.
+Rank upper bound is 2.
+Doing 3-isogeny descent on E6.
+Rank upper bound is 2.
+Doing two-descent on E5.
+Rank bound before Cassels-Tate is 1.
+Doing the Cassels-Tate pairing.
+Rank bound after Cassels-Tate is 1.
+Unconditional ranks are [ 3, 5, 1, 2, 1, 2 ].
+Working on k = 49596626.
+Doing 3-isogeny descent on E3.
+Rank upper bound is 1.
+Doing 3-isogeny descent on E4.
+Rank upper bound is 2.
+Doing 3-isogeny descent on E6.
+Rank upper bound is 2.
+Doing two-descent on E5.
+Rank bound before Cassels-Tate is 1.
+Doing the Cassels-Tate pairing.
+Rank bound after Cassels-Tate is 1.
+Unconditional ranks are [ 3, 5, 1, 2, 1, 2 ].
+Working on k = 51982498.
+Doing 3-isogeny descent on E3.
+Rank upper bound is 1.
+Doing 3-isogeny descent on E4.
+Rank upper bound is 2.
+Doing 3-isogeny descent on E6.
+Rank upper bound is 2.
+Doing two-descent on E5.
+Rank bound before Cassels-Tate is 3.
+Doing the Cassels-Tate pairing.
+Rank bound after Cassels-Tate is 1.
+Unconditional ranks are [ 5, 3, 1, 2, 1, 2 ].
+Working on k = 61168025.
+Doing 3-isogeny descent on E3.
+Rank upper bound is 1.
+Doing 3-isogeny descent on E4.
+Rank upper bound is 3.
+Doing 3-isogeny descent on E6.
+Rank upper bound is 2.
+Doing two-descent on E5.
+Rank bound before Cassels-Tate is 2.
+Doing the Cassels-Tate pairing.
+Rank bound after Cassels-Tate is 2.
+Unconditional ranks are [ 5, 5, 1, 3, 2, 2 ].
+Working on k = 63542810.
+Doing 3-isogeny descent on E3.
+Rank upper bound is 1.
+Doing 3-isogeny descent on E4.
+Rank upper bound is 2.
+Doing 3-isogeny descent on E6.
+Rank upper bound is 2.
+Doing two-descent on E5.
+Rank bound before Cassels-Tate is 1.
+Doing the Cassels-Tate pairing.
+Rank bound after Cassels-Tate is 1.
+Unconditional ranks are [ 3, 5, 1, 2, 1, 2 ].
+Working on k = 64532162.
+Doing 3-isogeny descent on E3.
+Rank upper bound is 3.
+Doing 3-isogeny descent on E4.
+Rank upper bound is 2.
+Doing 3-isogeny descent on E6.
+Rank upper bound is 2.
+Doing two-descent on E5.
+Rank bound before Cassels-Tate is 3.
+Doing the Cassels-Tate pairing.
+Rank bound after Cassels-Tate is 1.
+Unconditional ranks are [ 3, 5, 3, 2, 1, 2 ].
+Working on k = 68640266.
+Doing 3-isogeny descent on E3.
+Rank upper bound is 3.
+Doing 3-isogeny descent on E4.
+Rank upper bound is 2.
+Doing 3-isogeny descent on E6.
+Rank upper bound is 2.
+Doing two-descent on E5.
+Rank bound before Cassels-Tate is 1.
+Doing the Cassels-Tate pairing.
+Rank bound after Cassels-Tate is 1.
+Unconditional ranks are [ 3, 5, 3, 2, 1, 2 ].
+Working on k = 70884074.
+Doing 3-isogeny descent on E3.
+Rank upper bound is 1.
+Doing 3-isogeny descent on E4.
+Rank upper bound is 2.
+Doing 3-isogeny descent on E6.
+Rank upper bound is 2.
+Doing two-descent on E5.
+Rank bound before Cassels-Tate is 1.
+Doing the Cassels-Tate pairing.
+Rank bound after Cassels-Tate is 1.
+Unconditional ranks are [ 3, 5, 1, 2, 1, 2 ].
+Working on k = 71483834.
+Doing 3-isogeny descent on E3.
+Rank upper bound is 1.
+Doing 3-isogeny descent on E4.
+Rank upper bound is 2.
+Doing 3-isogeny descent on E6.
+Rank upper bound is 2.
+Doing two-descent on E5.
+Rank bound before Cassels-Tate is 1.
+Doing the Cassels-Tate pairing.
+Rank bound after Cassels-Tate is 1.
+Unconditional ranks are [ 5, 5, 1, 2, 1, 2 ].
+Working on k = 71934914.
+Doing 3-isogeny descent on E3.
+Rank upper bound is 1.
+Doing 3-isogeny descent on E4.
+Rank upper bound is 2.
+Doing 3-isogeny descent on E6.
+Rank upper bound is 2.
+Doing two-descent on E5.
+Rank bound before Cassels-Tate is 1.
+Doing the Cassels-Tate pairing.
+Rank bound after Cassels-Tate is 1.
+Unconditional ranks are [ 3, 5, 1, 2, 1, 2 ].
+Working on k = 85187090.
+Doing 3-isogeny descent on E3.
+Rank upper bound is 1.
+Doing 3-isogeny descent on E4.
+Rank upper bound is 2.
+Doing 3-isogeny descent on E6.
+Rank upper bound is 2.
+Doing two-descent on E5.
+Rank bound before Cassels-Tate is 1.
+Doing the Cassels-Tate pairing.
+Rank bound after Cassels-Tate is 1.
+Unconditional ranks are [ 3, 5, 1, 2, 1, 2 ].
+Working on k = 86673106.
+Doing 3-isogeny descent on E3.
+Rank upper bound is 5.
+Doing 3-isogeny descent on E4.
+Rank upper bound is 2.
+Doing 3-isogeny descent on E6.
+Rank upper bound is 4.
+Doing two-descent on E5.
+Rank bound before Cassels-Tate is 1.
+Doing the Cassels-Tate pairing.
+Rank bound after Cassels-Tate is 1.
+Unconditional ranks are [ 5, 3, 5, 2, 1, 4 ].
+Working on k = 91038026.
+Doing 3-isogeny descent on E3.
+Rank upper bound is 1.
+Doing 3-isogeny descent on E4.
+Rank upper bound is 2.
+Doing 3-isogeny descent on E6.
+Rank upper bound is 2.
+Doing two-descent on E5.
+Rank bound before Cassels-Tate is 1.
+Doing the Cassels-Tate pairing.
+Rank bound after Cassels-Tate is 1.
+Unconditional ranks are [ 5, 5, 1, 2, 1, 2 ].
+Working on k = 91977482.
+Doing 3-isogeny descent on E3.
+Rank upper bound is 1.
+Doing 3-isogeny descent on E4.
+Rank upper bound is 2.
+Doing 3-isogeny descent on E6.
+Rank upper bound is 2.
+Doing two-descent on E5.
+Rank bound before Cassels-Tate is 1.
+Doing the Cassels-Tate pairing.
+Rank bound after Cassels-Tate is 1.
+Unconditional ranks are [ 3, 5, 1, 2, 1, 2 ].
+Working on k = 92822690.
+Doing 3-isogeny descent on E3.
+Rank upper bound is 1.
+Doing 3-isogeny descent on E4.
+Rank upper bound is 2.
+Doing 3-isogeny descent on E6.
+Rank upper bound is 2.
+Doing two-descent on E5.
+Rank bound before Cassels-Tate is 1.
+Doing the Cassels-Tate pairing.
+Rank bound after Cassels-Tate is 1.
+Unconditional ranks are [ 3, 5, 1, 2, 1, 2 ].
+Working on k = 107634242.
+Doing 3-isogeny descent on E3.
+Rank upper bound is 1.
+Doing 3-isogeny descent on E4.
+Rank upper bound is 2.
+Doing 3-isogeny descent on E6.
+Rank upper bound is 2.
+Doing two-descent on E5.
+Rank bound before Cassels-Tate is 1.
+Doing the Cassels-Tate pairing.
+Rank bound after Cassels-Tate is 1.
+Unconditional ranks are [ 3, 5, 1, 2, 1, 2 ].
+Working on k = 114983002.
+Doing 3-isogeny descent on E3.
+Rank upper bound is 3.
+Doing 3-isogeny descent on E4.
+Rank upper bound is 2.
+Doing 3-isogeny descent on E6.
+Rank upper bound is 2.
+Doing two-descent on E5.
+Rank bound before Cassels-Tate is 1.
+Doing the Cassels-Tate pairing.
+Rank bound after Cassels-Tate is 1.
+Unconditional ranks are [ 5, 3, 3, 2, 1, 2 ].
+Working on k = 123975217.
+Doing 3-isogeny descent on E3.
+Rank upper bound is 2.
+Doing 3-isogeny descent on E4.
+Rank upper bound is 4.
+Doing 3-isogeny descent on E6.
+Rank upper bound is 3.
+Doing two-descent on E5.
+Rank bound before Cassels-Tate is 2.
+Doing the Cassels-Tate pairing.
+Rank bound after Cassels-Tate is 2.
+Unconditional ranks are [ 6, 4, 2, 4, 2, 3 ].
+Working on k = 125216786.
+Doing 3-isogeny descent on E3.
+Rank upper bound is 1.
+Doing 3-isogeny descent on E4.
+Rank upper bound is 2.
+Doing 3-isogeny descent on E6.
+Rank upper bound is 2.
+Doing two-descent on E5.
+Rank bound before Cassels-Tate is 1.
+Doing the Cassels-Tate pairing.
+Rank bound after Cassels-Tate is 1.
+Unconditional ranks are [ 3, 5, 1, 2, 1, 2 ].
+Working on k = 128039690.
+Doing 3-isogeny descent on E3.
+Rank upper bound is 1.
+Doing 3-isogeny descent on E4.
+Rank upper bound is 2.
+Doing 3-isogeny descent on E6.
+Rank upper bound is 2.
+Doing two-descent on E5.
+Rank bound before Cassels-Tate is 1.
+Doing the Cassels-Tate pairing.
+Rank bound after Cassels-Tate is 1.
+Unconditional ranks are [ 3, 5, 1, 2, 1, 2 ].
+Working on k = 128327978.
+Doing 3-isogeny descent on E3.
+Rank upper bound is 3.
+Doing 3-isogeny descent on E4.
+Rank upper bound is 2.
+Doing 3-isogeny descent on E6.
+Rank upper bound is 2.
+Doing two-descent on E5.
+Rank bound before Cassels-Tate is 1.
+Doing the Cassels-Tate pairing.
+Rank bound after Cassels-Tate is 1.
+Unconditional ranks are [ 3, 5, 3, 2, 1, 2 ].
+Working on k = 130913498.
+Doing 3-isogeny descent on E3.
+Rank upper bound is 3.
+Doing 3-isogeny descent on E4.
+Rank upper bound is 2.
+Doing 3-isogeny descent on E6.
+Rank upper bound is 2.
+Doing two-descent on E5.
+Rank bound before Cassels-Tate is 1.
+Doing the Cassels-Tate pairing.
+Rank bound after Cassels-Tate is 1.
+Unconditional ranks are [ 3, 5, 3, 2, 1, 2 ].
+Working on k = 136152074.
+Doing 3-isogeny descent on E3.
+Rank upper bound is 1.
+Doing 3-isogeny descent on E4.
+Rank upper bound is 2.
+Doing 3-isogeny descent on E6.
+Rank upper bound is 2.
+Doing two-descent on E5.
+Rank bound before Cassels-Tate is 1.
+Doing the Cassels-Tate pairing.
+Rank bound after Cassels-Tate is 1.
+Unconditional ranks are [ 3, 5, 1, 2, 1, 2 ].
+Working on k = 141246002.
+Doing 3-isogeny descent on E3.
+Rank upper bound is 1.
+Doing 3-isogeny descent on E4.
+Rank upper bound is 2.
+Doing 3-isogeny descent on E6.
+Rank upper bound is 2.
+Doing two-descent on E5.
+Rank bound before Cassels-Tate is 1.
+Doing the Cassels-Tate pairing.
+Rank bound after Cassels-Tate is 1.
+Unconditional ranks are [ 3, 5, 1, 2, 1, 2 ].
+Working on k = 141897170.
+Doing 3-isogeny descent on E3.
+Rank upper bound is 1.
+Doing 3-isogeny descent on E4.
+Rank upper bound is 2.
+Doing 3-isogeny descent on E6.
+Rank upper bound is 2.
+Doing two-descent on E5.
+Rank bound before Cassels-Tate is 3.
+Doing the Cassels-Tate pairing.
+Rank bound after Cassels-Tate is 1.
+Unconditional ranks are [ 3, 5, 1, 2, 1, 2 ].
+Working on k = 155252666.
+Doing 3-isogeny descent on E3.
+Rank upper bound is 1.
+Doing 3-isogeny descent on E4.
+Rank upper bound is 2.
+Doing 3-isogeny descent on E6.
+Rank upper bound is 2.
+Doing two-descent on E5.
+Rank bound before Cassels-Tate is 1.
+Doing the Cassels-Tate pairing.
+Rank bound after Cassels-Tate is 1.
+Unconditional ranks are [ 3, 5, 1, 2, 1, 2 ].
+Working on k = 158757482.
+Doing 3-isogeny descent on E3.
+Rank upper bound is 3.
+Doing 3-isogeny descent on E4.
+Rank upper bound is 2.
+Doing 3-isogeny descent on E6.
+Rank upper bound is 2.
+Doing two-descent on E5.
+Rank bound before Cassels-Tate is 3.
+Doing the Cassels-Tate pairing.
+Rank bound after Cassels-Tate is 1.
+Unconditional ranks are [ 3, 5, 3, 2, 1, 2 ].
+Done with unconditional rank computing.
+Part 2 - Using GRH, 2 and 4 descents and point searching to try to find enough 
+points.
+Working on k = 1828010.
+Rank lower and upper for E1 from MWsha is 1-1.
+Rank lower and upper for E2 from MWsha is 5-5.
+Rank lower and upper for E3 from MWsha is 1-1.
+E_(-k^2) works!
+Working on k = 9703954.
+Rank lower and upper for E1 from MWsha is 5-5.
+Rank lower and upper for E2 from MWsha is 1-1.
+Rank lower and upper for E3 from MWsha is 3-3.
+E_(-k^2) works!
+Working on k = 13876354.
+Rank lower and upper for E1 from MWsha is 5-5.
+Rank lower and upper for E2 from MWsha is 1-1.
+Rank lower and upper for E3 from MWsha is 5-5.
+Rank lower and upper for E4 from MWsha is 2-2.
+E_(16*k^2) works!
+Working on k = 27702362.
+Rank lower and upper for E1 from MWsha is 1-1.
+Rank lower and upper for E2 from MWsha is 5-5.
+Rank lower and upper for E3 from MWsha is 1-1.
+E_(-k^2) works!
+Working on k = 36512282.
+Rank lower and upper for E1 from MWsha is 1-1.
+Rank lower and upper for E2 from MWsha is 5-5.
+Rank lower and upper for E3 from MWsha is 1-1.
+Rank lower and upper for E4 from MWsha is 2-2.
+E_(16*k^2) works!
+Working on k = 36562178.
+Rank lower and upper for E1 from MWsha is 1-1.
+Rank lower and upper for E2 from MWsha is 5-5.
+Rank lower and upper for E3 from MWsha is 0-1.
+Rank lower and upper for E4 from MWsha is 2-2.
+E_(16*k^2) works!
+Working on k = 37796474.
+Rank lower and upper for E1 from MWsha is 1-1.
+Rank lower and upper for E2 from MWsha is 5-5.
+Rank lower and upper for E3 from MWsha is 0-1.
+Rank lower and upper for E4 from MWsha is 0-0.
+Rank lower and upper for E5 from MWsha is 0-1.
+Rank lower and upper for E6 from MWsha is 0-0.
+k = 37796474 is still bad.
+              Lower bounds are [ 1, 5, 0, 0, 0, 0 ].
+  Conditional upper bounds are [ 1, 5, 1, 0, 1, 0 ].
+Unconditional upper bounds are [ 3, 5, 1, 2, 1, 2 ].
+Working on k = 39299402.
+Rank lower and upper for E1 from MWsha is 1-1.
+Rank lower and upper for E2 from MWsha is 5-5.
+Rank lower and upper for E3 from MWsha is 1-1.
+E_(-k^2) works!
+Working on k = 41559842.
+Rank lower and upper for E1 from MWsha is 1-1.
+Rank lower and upper for E2 from MWsha is 5-5.
+Rank lower and upper for E3 from MWsha is 1-1.
+E_(-k^2) works!
+Working on k = 49596626.
+Rank lower and upper for E1 from MWsha is 1-1.
+Rank lower and upper for E2 from MWsha is 5-5.
+Rank lower and upper for E3 from MWsha is 1-1.
+E_(-k^2) works!
+Working on k = 51982498.
+Rank lower and upper for E1 from MWsha is 5-5.
+Rank lower and upper for E2 from MWsha is 1-1.
+Rank lower and upper for E3 from MWsha is 1-1.
+E_(-k^2) works!
+Working on k = 61168025.
+Rank lower and upper for E1 from MWsha is 5-5.
+Rank lower and upper for E2 from MWsha is 5-5.
+Rank lower and upper for E3 from MWsha is 1-1.
+E_(-k^2) works!
+Working on k = 63542810.
+Rank lower and upper for E1 from MWsha is 1-1.
+Rank lower and upper for E2 from MWsha is 5-5.
+Rank lower and upper for E3 from MWsha is 1-1.
+E_(-k^2) works!
+Working on k = 64532162.
+Rank lower and upper for E1 from MWsha is 1-1.
+Rank lower and upper for E2 from MWsha is 5-5.
+Rank lower and upper for E3 from MWsha is 1-1.
+Rank lower and upper for E4 from MWsha is 2-2.
+E_(16*k^2) works!
+Working on k = 68640266.
+Rank lower and upper for E1 from MWsha is 1-1.
+Rank lower and upper for E2 from MWsha is 5-5.
+Rank lower and upper for E3 from MWsha is 3-3.
+E_(-k^2) works!
+Working on k = 70884074.
+Rank lower and upper for E1 from MWsha is 1-1.
+Rank lower and upper for E2 from MWsha is 5-5.
+Rank lower and upper for E3 from MWsha is 1-1.
+E_(-k^2) works!
+Working on k = 71483834.
+Rank lower and upper for E1 from MWsha is 3-3.
+Rank lower and upper for E2 from MWsha is 5-5.
+Rank lower and upper for E3 from MWsha is 1-1.
+E_(-k^2) works!
+Working on k = 71934914.
+Rank lower and upper for E1 from MWsha is 1-1.
+Rank lower and upper for E2 from MWsha is 5-5.
+Rank lower and upper for E3 from MWsha is 1-1.
+E_(-k^2) works!
+Working on k = 85187090.
+Rank lower and upper for E1 from MWsha is 1-1.
+Rank lower and upper for E2 from MWsha is 5-5.
+Rank lower and upper for E3 from MWsha is 1-1.
+E_(-k^2) works!
+Working on k = 86673106.
+Rank lower and upper for E1 from MWsha is 5-5.
+Rank lower and upper for E2 from MWsha is 1-1.
+Rank lower and upper for E3 from MWsha is 5-5.
+Rank lower and upper for E4 from MWsha is 0-0.
+Rank lower and upper for E5 from MWsha is 1-1.
+E_(k^3) works!
+Working on k = 91038026.
+Rank lower and upper for E1 from MWsha is 3-3.
+Rank lower and upper for E2 from MWsha is 5-5.
+Rank lower and upper for E3 from MWsha is 1-1.
+E_(-k^2) works!
+Working on k = 91977482.
+Rank lower and upper for E1 from MWsha is 1-1.
+Rank lower and upper for E2 from MWsha is 5-5.
+Rank lower and upper for E3 from MWsha is 0-1.
+Rank lower and upper for E4 from MWsha is 2-2.
+E_(16*k^2) works!
+Working on k = 92822690.
+Rank lower and upper for E1 from MWsha is 1-1.
+Rank lower and upper for E2 from MWsha is 5-5.
+Rank lower and upper for E3 from MWsha is 1-1.
+E_(-k^2) works!
+Working on k = 107634242.
+Rank lower and upper for E1 from MWsha is 1-1.
+Rank lower and upper for E2 from MWsha is 5-5.
+Rank lower and upper for E3 from MWsha is 0-1.
+Rank lower and upper for E4 from MWsha is 0-2.
+Rank lower and upper for E5 from MWsha is 0-1.
+Rank lower and upper for E6 from MWsha is 0-2.
+k = 107634242 is still bad.
+              Lower bounds are [ 1, 5, 0, 0, 0, 0 ].
+  Conditional upper bounds are [ 1, 5, 1, 2, 1, 2 ].
+Unconditional upper bounds are [ 3, 5, 1, 2, 1, 2 ].
+Working on k = 114983002.
+Rank lower and upper for E1 from MWsha is 5-5.
+Rank lower and upper for E2 from MWsha is 1-1.
+Rank lower and upper for E3 from MWsha is 3-3.
+E_(-k^2) works!
+Working on k = 123975217.
+Rank lower and upper for E1 from MWsha is 6-6.
+Rank lower and upper for E2 from MWsha is 2-2.
+Rank lower and upper for E3 from MWsha is 2-2.
+E_(-k^2) works!
+Working on k = 125216786.
+Rank lower and upper for E1 from MWsha is 1-1.
+Rank lower and upper for E2 from MWsha is 5-5.
+Rank lower and upper for E3 from MWsha is 0-1.
+Rank lower and upper for E4 from MWsha is 2-2.
+E_(16*k^2) works!
+Working on k = 128039690.
+Rank lower and upper for E1 from MWsha is 1-1.
+Rank lower and upper for E2 from MWsha is 5-5.
+Rank lower and upper for E3 from MWsha is 1-1.
+E_(-k^2) works!
+Working on k = 128327978.
+Rank lower and upper for E1 from MWsha is 1-1.
+Rank lower and upper for E2 from MWsha is 5-5.
+Rank lower and upper for E3 from MWsha is 1-1.
+Rank lower and upper for E4 from MWsha is 0-0.
+Rank lower and upper for E5 from MWsha is 0-1.
+Rank lower and upper for E6 from MWsha is 0-0.
+k = 128327978 is still bad.
+              Lower bounds are [ 1, 5, 1, 0, 0, 0 ].
+  Conditional upper bounds are [ 1, 5, 1, 0, 1, 0 ].
+Unconditional upper bounds are [ 3, 5, 3, 2, 1, 2 ].
+Working on k = 130913498.
+Rank lower and upper for E1 from MWsha is 1-1.
+Rank lower and upper for E2 from MWsha is 5-5.
+Rank lower and upper for E3 from MWsha is 1-1.
+Rank lower and upper for E4 from MWsha is 2-2.
+E_(16*k^2) works!
+Working on k = 136152074.
+Rank lower and upper for E1 from MWsha is 1-1.
+Rank lower and upper for E2 from MWsha is 5-5.
+Rank lower and upper for E3 from MWsha is 0-1.
+Rank lower and upper for E4 from MWsha is 0-0.
+Rank lower and upper for E5 from MWsha is 0-1.
+Rank lower and upper for E6 from MWsha is 0-0.
+k = 136152074 is still bad.
+              Lower bounds are [ 1, 5, 0, 0, 0, 0 ].
+  Conditional upper bounds are [ 1, 5, 1, 0, 1, 0 ].
+Unconditional upper bounds are [ 3, 5, 1, 2, 1, 2 ].
+Working on k = 141246002.
+Rank lower and upper for E1 from MWsha is 1-1.
+Rank lower and upper for E2 from MWsha is 5-5.
+Rank lower and upper for E3 from MWsha is 1-1.
+E_(-k^2) works!
+Working on k = 141897170.
+Rank lower and upper for E1 from MWsha is 1-1.
+Rank lower and upper for E2 from MWsha is 5-5.
+Rank lower and upper for E3 from MWsha is 1-1.
+E_(-k^2) works!
+Working on k = 155252666.
+Rank lower and upper for E1 from MWsha is 1-1.
+Rank lower and upper for E2 from MWsha is 5-5.
+Rank lower and upper for E3 from MWsha is 0-1.
+Rank lower and upper for E4 from MWsha is 2-2.
+E_(16*k^2) works!
+Working on k = 158757482.
+Rank lower and upper for E1 from MWsha is 1-1.
+Rank lower and upper for E2 from MWsha is 5-5.
+Rank lower and upper for E3 from MWsha is 1-1.
+Rank lower and upper for E4 from MWsha is 2-2.
+E_(16*k^2) works!
+
+Total time: 263.379 seconds, Total memory usage: 181.25MB

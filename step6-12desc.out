@@ -1,0 +1,2044 @@
+Magma V2.26-9     Fri Jan 21 2022 16:18:23 on weil     [Seed = 311968057]
+
++-------------------------------------------------------------------+
+|       This copy of Magma has been made available through a        |
+|                   generous initiative of the                      |
+|                                                                   |
+|                         Simons Foundation                         |
+|                                                                   |
+| covering U.S. Colleges, Universities, Nonprofit Research entities,|
+|               and their students, faculty, and staff              |
++-------------------------------------------------------------------+
+
+Type ? for help.  Type <Ctrl>-D to quit.
+
+Loading file "step6-12desc.txt"
+Loading "stillbad.txt"
+Loading "highrankbad.txt"
+Working on k = 20233298.
+Doing 12-descent for E_(-k^2).
+Doing twelve descent 1 of 1.
+Time: 9.370
+Point searching on cover 1 with bound 1000.
+Time: 3.690
+Point searching on cover 2 with bound 1000.
+Time: 3.770
+Found point with canonical height 496.120107939168147793795190677.
+Total time needed was 34.190 sec.
+Working on k = 24773050.
+Doing 12-descent for E_(16*k^2).
+Doing twelve descent 1 of 4.
+Time: 10.110
+Doing twelve descent 2 of 4.
+Time: 6.140
+Doing twelve descent 3 of 4.
+Time: 8.570
+Doing twelve descent 4 of 4.
+Time: 8.370
+Point searching on cover 1 with bound 1000.
+Time: 9.570
+Point searching on cover 2 with bound 1000.
+Time: 8.060
+Point searching on cover 3 with bound 1000.
+Time: 7.120
+Point searching on cover 4 with bound 1000.
+Time: 6.450
+Point searching on cover 5 with bound 1000.
+Time: 9.290
+Point searching on cover 6 with bound 1000.
+Time: 8.460
+Point searching on cover 7 with bound 1000.
+Time: 8.830
+Point searching on cover 8 with bound 1000.
+Time: 6.540
+Point searching on cover 1 with bound 10000.
+Time: 6.890
+Point searching on cover 2 with bound 10000.
+Time: 6.740
+Point searching on cover 3 with bound 10000.
+Time: 6.520
+Point searching on cover 4 with bound 10000.
+Time: 6.580
+Point searching on cover 5 with bound 10000.
+Time: 8.490
+Point searching on cover 6 with bound 10000.
+Time: 8.460
+Point searching on cover 7 with bound 10000.
+Time: 6.370
+Point searching on cover 8 with bound 10000.
+Time: 6.600
+Point searching on cover 1 with bound 100000.
+Time: 9.240
+Point searching on cover 2 with bound 100000.
+Time: 8.800
+Point searching on cover 3 with bound 100000.
+Time: 8.700
+Point searching on cover 4 with bound 100000.
+Time: 8.610
+Point searching on cover 5 with bound 100000.
+Time: 11.200
+Point searching on cover 6 with bound 100000.
+Time: 11.020
+Point searching on cover 7 with bound 100000.
+Time: 8.040
+Point searching on cover 8 with bound 100000.
+Time: 8.570
+Point searching on cover 1 with bound 1000000.
+Time: 12.650
+Point searching on cover 2 with bound 1000000.
+Time: 12.000
+Point searching on cover 3 with bound 1000000.
+Time: 11.640
+Point searching on cover 4 with bound 1000000.
+Time: 10.380
+Point searching on cover 5 with bound 1000000.
+Time: 15.130
+Point searching on cover 6 with bound 1000000.
+Time: 14.850
+Point searching on cover 7 with bound 1000000.
+Time: 11.260
+Point searching on cover 8 with bound 1000000.
+Time: 10.810
+Point searching on cover 1 with bound 10000000.
+Time: 13.770
+Point searching on cover 2 with bound 10000000.
+Time: 13.760
+Point searching on cover 3 with bound 10000000.
+Time: 8.850
+Point searching on cover 4 with bound 10000000.
+Time: 9.520
+Point searching on cover 5 with bound 10000000.
+Time: 14.760
+Point searching on cover 6 with bound 10000000.
+Time: 11.510
+Point searching on cover 7 with bound 10000000.
+Time: 8.160
+Point searching on cover 8 with bound 10000000.
+Time: 10.240
+Point searching on cover 1 with bound 100000000.
+Time: 7.920
+Point searching on cover 2 with bound 100000000.
+Time: 8.220
+Point searching on cover 3 with bound 100000000.
+Time: 6.000
+Point searching on cover 4 with bound 100000000.
+Time: 7.420
+Point searching on cover 5 with bound 100000000.
+Time: 7.360
+Point searching on cover 6 with bound 100000000.
+Time: 8.570
+Point searching on cover 7 with bound 100000000.
+Time: 5.920
+Point searching on cover 8 with bound 100000000.
+Time: 6.490
+Point searching on cover 1 with bound 1000000000.
+Time: 20.630
+Point searching on cover 2 with bound 1000000000.
+Time: 16.940
+Found point with canonical height 797.597932688188805953203571252.
+Total time needed was 526.690 sec.
+Working on k = 49897450.
+Doing 12-descent for E_(16*k^2).
+Doing twelve descent 1 of 4.
+Time: 8.280
+Doing twelve descent 2 of 4.
+Time: 7.910
+Doing twelve descent 3 of 4.
+Time: 6.400
+Doing twelve descent 4 of 4.
+Time: 10.100
+Point searching on cover 1 with bound 1000.
+Time: 5.960
+Point searching on cover 2 with bound 1000.
+Time: 6.060
+Point searching on cover 3 with bound 1000.
+Time: 7.010
+Point searching on cover 4 with bound 1000.
+Time: 8.440
+Point searching on cover 5 with bound 1000.
+Time: 8.480
+Point searching on cover 6 with bound 1000.
+Time: 8.590
+Point searching on cover 7 with bound 1000.
+Time: 6.620
+Point searching on cover 8 with bound 1000.
+Time: 6.430
+Point searching on cover 1 with bound 10000.
+Time: 5.910
+Point searching on cover 2 with bound 10000.
+Time: 6.160
+Point searching on cover 3 with bound 10000.
+Time: 6.980
+Point searching on cover 4 with bound 10000.
+Time: 6.840
+Point searching on cover 5 with bound 10000.
+Time: 8.390
+Point searching on cover 6 with bound 10000.
+Time: 8.460
+Point searching on cover 7 with bound 10000.
+Time: 6.740
+Point searching on cover 8 with bound 10000.
+Time: 6.520
+Point searching on cover 1 with bound 100000.
+Time: 8.160
+Point searching on cover 2 with bound 100000.
+Time: 8.060
+Point searching on cover 3 with bound 100000.
+Time: 9.010
+Point searching on cover 4 with bound 100000.
+Time: 9.090
+Point searching on cover 5 with bound 100000.
+Time: 11.010
+Point searching on cover 6 with bound 100000.
+Time: 10.980
+Point searching on cover 7 with bound 100000.
+Time: 8.600
+Point searching on cover 8 with bound 100000.
+Time: 8.110
+Point searching on cover 1 with bound 1000000.
+Time: 11.040
+Point searching on cover 2 with bound 1000000.
+Time: 10.920
+Point searching on cover 3 with bound 1000000.
+Time: 13.120
+Point searching on cover 4 with bound 1000000.
+Time: 13.120
+Point searching on cover 5 with bound 1000000.
+Time: 15.250
+Point searching on cover 6 with bound 1000000.
+Time: 15.750
+Point searching on cover 7 with bound 1000000.
+Time: 12.050
+Point searching on cover 8 with bound 1000000.
+Time: 11.220
+Point searching on cover 1 with bound 10000000.
+Time: 10.970
+Point searching on cover 2 with bound 10000000.
+Time: 8.410
+Point searching on cover 3 with bound 10000000.
+Time: 9.600
+Point searching on cover 4 with bound 10000000.
+Time: 10.990
+Point searching on cover 5 with bound 10000000.
+Time: 11.740
+Point searching on cover 6 with bound 10000000.
+Time: 13.530
+Point searching on cover 7 with bound 10000000.
+Time: 8.790
+Point searching on cover 8 with bound 10000000.
+Time: 9.690
+Point searching on cover 1 with bound 100000000.
+Time: 6.520
+Point searching on cover 2 with bound 100000000.
+Time: 6.250
+Point searching on cover 3 with bound 100000000.
+Time: 5.610
+Point searching on cover 4 with bound 100000000.
+Time: 6.290
+Point searching on cover 5 with bound 100000000.
+Time: 8.470
+Point searching on cover 6 with bound 100000000.
+Time: 7.590
+Point searching on cover 7 with bound 100000000.
+Time: 6.220
+Point searching on cover 8 with bound 100000000.
+Time: 6.080
+Point searching on cover 1 with bound 1000000000.
+Time: 10.970
+Point searching on cover 2 with bound 1000000000.
+Time: 11.960
+Point searching on cover 3 with bound 1000000000.
+Time: 11.620
+Point searching on cover 4 with bound 1000000000.
+Time: 12.280
+Point searching on cover 5 with bound 1000000000.
+Time: 14.770
+Point searching on cover 6 with bound 1000000000.
+Time: 14.990
+Point searching on cover 7 with bound 1000000000.
+Time: 11.820
+Point searching on cover 8 with bound 1000000000.
+Time: 11.350
+We failed for k = 49897450!
+Working on k = 51348970.
+Doing 12-descent for E_4k.
+Doing twelve descent 1 of 1.
+Time: 28.050
+Point searching on cover 1 with bound 1000.
+Time: 2.390
+Found point with canonical height 409.458242265500608042445523023.
+Total time needed was 96.880 sec.
+Working on k = 56966050.
+Doing 12-descent for E_(16*k^2).
+Doing twelve descent 1 of 4.
+Time: 8.890
+Doing twelve descent 2 of 4.
+Time: 9.360
+Doing twelve descent 3 of 4.
+Time: 8.740
+Doing twelve descent 4 of 4.
+Time: 7.410
+Point searching on cover 1 with bound 1000.
+Time: 8.330
+Point searching on cover 2 with bound 1000.
+Time: 9.300
+Point searching on cover 3 with bound 1000.
+Time: 6.670
+Found point with canonical height 427.745151060235231710916846851.
+Total time needed was 70.000 sec.
+Working on k = 70827842.
+Doing 12-descent for E_k^3.
+Doing twelve descent 1 of 13.
+Time: 8.470
+Doing twelve descent 2 of 13.
+Time: 7.800
+Doing twelve descent 3 of 13.
+Time: 7.900
+Doing twelve descent 4 of 13.
+Time: 8.480
+Doing twelve descent 5 of 13.
+Time: 6.940
+Doing twelve descent 6 of 13.
+Time: 7.610
+Doing twelve descent 7 of 13.
+Time: 8.150
+Doing twelve descent 8 of 13.
+Time: 8.100
+Doing twelve descent 9 of 13.
+Time: 8.110
+Doing twelve descent 10 of 13.
+Time: 7.510
+Doing twelve descent 11 of 13.
+Time: 7.550
+Doing twelve descent 12 of 13.
+Time: 7.940
+Doing twelve descent 13 of 13.
+Time: 7.630
+Point searching on cover 1 with bound 1000.
+Time: 4.310
+Point searching on cover 2 with bound 1000.
+Time: 4.360
+Point searching on cover 3 with bound 1000.
+Time: 4.780
+Point searching on cover 4 with bound 1000.
+Time: 4.620
+Point searching on cover 5 with bound 1000.
+Time: 4.250
+Point searching on cover 6 with bound 1000.
+Time: 4.100
+Point searching on cover 7 with bound 1000.
+Time: 4.430
+Point searching on cover 8 with bound 1000.
+Time: 4.410
+Point searching on cover 9 with bound 1000.
+Time: 4.250
+Point searching on cover 10 with bound 1000.
+Time: 4.310
+Point searching on cover 11 with bound 1000.
+Time: 4.180
+Point searching on cover 12 with bound 1000.
+Time: 4.270
+Point searching on cover 13 with bound 1000.
+Time: 4.350
+Point searching on cover 14 with bound 1000.
+Time: 4.360
+Point searching on cover 15 with bound 1000.
+Time: 4.310
+Point searching on cover 16 with bound 1000.
+Time: 4.420
+Point searching on cover 17 with bound 1000.
+Time: 4.190
+Point searching on cover 18 with bound 1000.
+Time: 4.180
+Point searching on cover 19 with bound 1000.
+Time: 4.510
+Point searching on cover 20 with bound 1000.
+Time: 4.380
+Point searching on cover 21 with bound 1000.
+Time: 4.280
+Point searching on cover 22 with bound 1000.
+Time: 4.250
+Point searching on cover 23 with bound 1000.
+Time: 4.390
+Point searching on cover 24 with bound 1000.
+Time: 4.380
+Point searching on cover 25 with bound 1000.
+Time: 4.370
+Point searching on cover 26 with bound 1000.
+Time: 4.480
+Point searching on cover 1 with bound 10000.
+Time: 9.560
+Point searching on cover 2 with bound 10000.
+Time: 10.170
+Point searching on cover 3 with bound 10000.
+Time: 10.710
+Point searching on cover 4 with bound 10000.
+Time: 10.490
+Point searching on cover 5 with bound 10000.
+Time: 9.920
+Point searching on cover 6 with bound 10000.
+Time: 9.690
+Point searching on cover 7 with bound 10000.
+Time: 10.010
+Point searching on cover 8 with bound 10000.
+Time: 10.230
+Point searching on cover 9 with bound 10000.
+Time: 9.640
+Point searching on cover 10 with bound 10000.
+Time: 10.100
+Point searching on cover 11 with bound 10000.
+Time: 9.430
+Point searching on cover 12 with bound 10000.
+Time: 10.110
+Point searching on cover 13 with bound 10000.
+Time: 9.840
+Point searching on cover 14 with bound 10000.
+Time: 10.250
+Point searching on cover 15 with bound 10000.
+Time: 10.110
+Point searching on cover 16 with bound 10000.
+Time: 10.280
+Point searching on cover 17 with bound 10000.
+Time: 9.830
+Point searching on cover 18 with bound 10000.
+Time: 9.620
+Point searching on cover 19 with bound 10000.
+Time: 10.210
+Point searching on cover 20 with bound 10000.
+Time: 9.930
+Point searching on cover 21 with bound 10000.
+Time: 9.810
+Point searching on cover 22 with bound 10000.
+Time: 9.940
+Point searching on cover 23 with bound 10000.
+Time: 10.150
+Point searching on cover 24 with bound 10000.
+Time: 9.950
+Point searching on cover 25 with bound 10000.
+Time: 9.910
+Point searching on cover 26 with bound 10000.
+Time: 10.190
+Point searching on cover 1 with bound 100000.
+Time: 9.970
+Point searching on cover 2 with bound 100000.
+Time: 10.090
+Point searching on cover 3 with bound 100000.
+Time: 10.580
+Point searching on cover 4 with bound 100000.
+Time: 10.380
+Point searching on cover 5 with bound 100000.
+Time: 9.600
+Point searching on cover 6 with bound 100000.
+Time: 9.630
+Point searching on cover 7 with bound 100000.
+Time: 10.180
+Point searching on cover 8 with bound 100000.
+Time: 10.120
+Point searching on cover 9 with bound 100000.
+Time: 9.780
+Point searching on cover 10 with bound 100000.
+Time: 9.990
+Point searching on cover 11 with bound 100000.
+Time: 9.750
+Point searching on cover 12 with bound 100000.
+Time: 9.930
+Point searching on cover 13 with bound 100000.
+Time: 9.950
+Point searching on cover 14 with bound 100000.
+Time: 10.140
+Point searching on cover 15 with bound 100000.
+Time: 9.810
+Point searching on cover 16 with bound 100000.
+Time: 10.010
+Point searching on cover 17 with bound 100000.
+Time: 9.300
+Point searching on cover 18 with bound 100000.
+Time: 9.740
+Point searching on cover 19 with bound 100000.
+Time: 10.410
+Point searching on cover 20 with bound 100000.
+Time: 10.100
+Point searching on cover 21 with bound 100000.
+Time: 10.050
+Point searching on cover 22 with bound 100000.
+Time: 9.730
+Found point with canonical height 205.223798734819586529173306423.
+Total time needed was 711.410 sec.
+Working on k = 73220330.
+Doing 12-descent for E_k.
+Doing twelve descent 1 of 1.
+Time: 12.890
+Point searching on cover 1 with bound 1000.
+Time: 9.310
+Found point with canonical height 298.571466175279314797343108224.
+Total time needed was 57.840 sec.
+Working on k = 96497066.
+Doing 12-descent for E_4k.
+Doing twelve descent 1 of 1.
+Time: 14.710
+Point searching on cover 1 with bound 1000.
+Time: 5.140
+Found point with canonical height 205.124425087427584686822278201.
+Total time needed was 99.060 sec.
+Working on k = 103288970.
+Doing 12-descent for E_k.
+Doing twelve descent 1 of 1.
+Time: 12.810
+Point searching on cover 1 with bound 1000.
+Time: 9.340
+Found point with canonical height 240.778078476668416504087807560.
+Total time needed was 76.970 sec.
+Working on k = 104601890.
+Doing 12-descent for E_4k.
+Doing twelve descent 1 of 1.
+Time: 19.010
+Point searching on cover 1 with bound 1000.
+Time: 2.920
+Found point with canonical height 275.637469072458507328325665475.
+Total time needed was 94.930 sec.
+Working on k = 117092530.
+Doing 12-descent for E_k^3.
+Doing twelve descent 1 of 13.
+Time: 10.270
+Doing twelve descent 2 of 13.
+Time: 10.000
+Doing twelve descent 3 of 13.
+Time: 9.600
+Doing twelve descent 4 of 13.
+Time: 9.890
+Doing twelve descent 5 of 13.
+Time: 9.850
+Doing twelve descent 6 of 13.
+Time: 10.060
+Doing twelve descent 7 of 13.
+Time: 9.140
+Doing twelve descent 8 of 13.
+Time: 9.690
+Doing twelve descent 9 of 13.
+Time: 9.520
+Doing twelve descent 10 of 13.
+Time: 10.250
+Doing twelve descent 11 of 13.
+Time: 9.650
+Doing twelve descent 12 of 13.
+Time: 9.060
+Doing twelve descent 13 of 13.
+Time: 9.860
+Point searching on cover 1 with bound 1000.
+Time: 10.700
+Point searching on cover 2 with bound 1000.
+Time: 9.570
+Point searching on cover 3 with bound 1000.
+Time: 13.820
+Point searching on cover 4 with bound 1000.
+Time: 12.050
+Point searching on cover 5 with bound 1000.
+Time: 11.890
+Point searching on cover 6 with bound 1000.
+Time: 11.190
+Point searching on cover 7 with bound 1000.
+Time: 9.960
+Point searching on cover 8 with bound 1000.
+Time: 11.660
+Point searching on cover 9 with bound 1000.
+Time: 8.450
+Point searching on cover 10 with bound 1000.
+Time: 10.210
+Point searching on cover 11 with bound 1000.
+Time: 8.300
+Point searching on cover 12 with bound 1000.
+Time: 8.350
+Point searching on cover 13 with bound 1000.
+Time: 9.650
+Point searching on cover 14 with bound 1000.
+Time: 11.110
+Point searching on cover 15 with bound 1000.
+Time: 10.500
+Point searching on cover 16 with bound 1000.
+Time: 10.640
+Point searching on cover 17 with bound 1000.
+Time: 9.690
+Point searching on cover 18 with bound 1000.
+Time: 9.000
+Point searching on cover 19 with bound 1000.
+Time: 12.190
+Point searching on cover 20 with bound 1000.
+Time: 10.180
+Point searching on cover 21 with bound 1000.
+Time: 9.570
+Point searching on cover 22 with bound 1000.
+Time: 9.020
+Point searching on cover 23 with bound 1000.
+Time: 9.200
+Point searching on cover 24 with bound 1000.
+Time: 11.550
+Point searching on cover 25 with bound 1000.
+Time: 9.950
+Point searching on cover 26 with bound 1000.
+Time: 8.940
+Point searching on cover 1 with bound 10000.
+Time: 8.310
+Point searching on cover 2 with bound 10000.
+Time: 8.260
+Point searching on cover 3 with bound 10000.
+Time: 11.140
+Point searching on cover 4 with bound 10000.
+Time: 11.100
+Point searching on cover 5 with bound 10000.
+Time: 10.260
+Point searching on cover 6 with bound 10000.
+Time: 10.360
+Point searching on cover 7 with bound 10000.
+Time: 9.240
+Point searching on cover 8 with bound 10000.
+Time: 8.970
+Point searching on cover 9 with bound 10000.
+Time: 8.390
+Point searching on cover 10 with bound 10000.
+Time: 8.300
+Point searching on cover 11 with bound 10000.
+Time: 8.270
+Point searching on cover 12 with bound 10000.
+Time: 8.320
+Point searching on cover 13 with bound 10000.
+Time: 8.920
+Point searching on cover 14 with bound 10000.
+Time: 9.030
+Point searching on cover 15 with bound 10000.
+Time: 9.750
+Point searching on cover 16 with bound 10000.
+Time: 9.840
+Point searching on cover 17 with bound 10000.
+Time: 8.970
+Point searching on cover 18 with bound 10000.
+Time: 8.950
+Point searching on cover 19 with bound 10000.
+Time: 9.400
+Point searching on cover 20 with bound 10000.
+Time: 8.840
+Point searching on cover 21 with bound 10000.
+Time: 8.870
+Point searching on cover 22 with bound 10000.
+Time: 8.940
+Point searching on cover 23 with bound 10000.
+Time: 9.150
+Point searching on cover 24 with bound 10000.
+Time: 8.650
+Point searching on cover 25 with bound 10000.
+Time: 9.240
+Point searching on cover 26 with bound 10000.
+Time: 9.090
+Point searching on cover 1 with bound 100000.
+Time: 8.240
+Point searching on cover 2 with bound 100000.
+Time: 8.210
+Point searching on cover 3 with bound 100000.
+Time: 10.750
+Point searching on cover 4 with bound 100000.
+Time: 10.710
+Point searching on cover 5 with bound 100000.
+Time: 10.350
+Point searching on cover 6 with bound 100000.
+Time: 10.270
+Point searching on cover 7 with bound 100000.
+Time: 9.130
+Point searching on cover 8 with bound 100000.
+Time: 8.910
+Point searching on cover 9 with bound 100000.
+Time: 8.270
+Point searching on cover 10 with bound 100000.
+Time: 8.220
+Point searching on cover 11 with bound 100000.
+Time: 8.190
+Point searching on cover 12 with bound 100000.
+Time: 8.240
+Point searching on cover 13 with bound 100000.
+Time: 8.840
+Point searching on cover 14 with bound 100000.
+Time: 8.920
+Point searching on cover 15 with bound 100000.
+Time: 9.650
+Point searching on cover 16 with bound 100000.
+Time: 9.720
+Point searching on cover 17 with bound 100000.
+Time: 8.880
+Point searching on cover 18 with bound 100000.
+Time: 8.820
+Point searching on cover 19 with bound 100000.
+Time: 9.280
+Point searching on cover 20 with bound 100000.
+Time: 8.740
+Point searching on cover 21 with bound 100000.
+Time: 8.740
+Point searching on cover 22 with bound 100000.
+Time: 8.650
+Point searching on cover 23 with bound 100000.
+Time: 9.050
+Point searching on cover 24 with bound 100000.
+Time: 8.950
+Point searching on cover 25 with bound 100000.
+Time: 9.120
+Point searching on cover 26 with bound 100000.
+Time: 8.980
+Point searching on cover 1 with bound 1000000.
+Time: 10.150
+Point searching on cover 2 with bound 1000000.
+Time: 10.100
+Point searching on cover 3 with bound 1000000.
+Time: 13.110
+Point searching on cover 4 with bound 1000000.
+Time: 11.810
+Point searching on cover 5 with bound 1000000.
+Time: 11.830
+Point searching on cover 6 with bound 1000000.
+Time: 14.070
+Point searching on cover 7 with bound 1000000.
+Time: 12.170
+Point searching on cover 8 with bound 1000000.
+Time: 11.280
+Point searching on cover 9 with bound 1000000.
+Time: 11.010
+Point searching on cover 10 with bound 1000000.
+Time: 11.580
+Point searching on cover 11 with bound 1000000.
+Time: 10.970
+Point searching on cover 12 with bound 1000000.
+Time: 10.690
+Point searching on cover 13 with bound 1000000.
+Time: 12.890
+Point searching on cover 14 with bound 1000000.
+Time: 11.190
+Point searching on cover 15 with bound 1000000.
+Time: 11.810
+Point searching on cover 16 with bound 1000000.
+Time: 12.080
+Point searching on cover 17 with bound 1000000.
+Time: 12.020
+Point searching on cover 18 with bound 1000000.
+Time: 12.140
+Point searching on cover 19 with bound 1000000.
+Time: 11.870
+Point searching on cover 20 with bound 1000000.
+Time: 10.830
+Point searching on cover 21 with bound 1000000.
+Time: 12.090
+Point searching on cover 22 with bound 1000000.
+Time: 11.180
+Point searching on cover 23 with bound 1000000.
+Time: 11.070
+Point searching on cover 24 with bound 1000000.
+Time: 11.640
+Point searching on cover 25 with bound 1000000.
+Time: 12.160
+Point searching on cover 26 with bound 1000000.
+Time: 12.190
+Point searching on cover 1 with bound 10000000.
+Time: 9.570
+Point searching on cover 2 with bound 10000000.
+Time: 8.010
+Point searching on cover 3 with bound 10000000.
+Time: 15.900
+Point searching on cover 4 with bound 10000000.
+Time: 17.400
+Point searching on cover 5 with bound 10000000.
+Time: 16.100
+Point searching on cover 6 with bound 10000000.
+Time: 14.950
+Point searching on cover 7 with bound 10000000.
+Time: 13.720
+Point searching on cover 8 with bound 10000000.
+Time: 13.170
+Point searching on cover 9 with bound 10000000.
+Time: 9.150
+Point searching on cover 10 with bound 10000000.
+Time: 8.700
+Point searching on cover 11 with bound 10000000.
+Time: 9.980
+Point searching on cover 12 with bound 10000000.
+Time: 8.030
+Point searching on cover 13 with bound 10000000.
+Time: 14.000
+Point searching on cover 14 with bound 10000000.
+Time: 14.540
+Point searching on cover 15 with bound 10000000.
+Time: 12.450
+Point searching on cover 16 with bound 10000000.
+Time: 12.620
+Point searching on cover 17 with bound 10000000.
+Time: 9.820
+Point searching on cover 18 with bound 10000000.
+Time: 10.330
+Point searching on cover 19 with bound 10000000.
+Time: 8.830
+Point searching on cover 20 with bound 10000000.
+Time: 11.000
+Point searching on cover 21 with bound 10000000.
+Time: 8.970
+Point searching on cover 22 with bound 10000000.
+Time: 9.870
+Point searching on cover 23 with bound 10000000.
+Time: 9.210
+Point searching on cover 24 with bound 10000000.
+Time: 10.770
+Point searching on cover 25 with bound 10000000.
+Time: 10.010
+Point searching on cover 26 with bound 10000000.
+Time: 10.780
+Point searching on cover 1 with bound 100000000.
+Time: 8.450
+Point searching on cover 2 with bound 100000000.
+Time: 8.330
+Point searching on cover 3 with bound 100000000.
+Time: 11.570
+Point searching on cover 4 with bound 100000000.
+Time: 10.980
+Point searching on cover 5 with bound 100000000.
+Time: 10.040
+Point searching on cover 6 with bound 100000000.
+Time: 9.660
+Point searching on cover 7 with bound 100000000.
+Time: 7.420
+Point searching on cover 8 with bound 100000000.
+Time: 7.450
+Point searching on cover 9 with bound 100000000.
+Time: 7.840
+Point searching on cover 10 with bound 100000000.
+Time: 7.370
+Point searching on cover 11 with bound 100000000.
+Time: 8.350
+Point searching on cover 12 with bound 100000000.
+Time: 8.460
+Point searching on cover 13 with bound 100000000.
+Time: 7.940
+Point searching on cover 14 with bound 100000000.
+Time: 9.290
+Point searching on cover 15 with bound 100000000.
+Time: 10.260
+Point searching on cover 16 with bound 100000000.
+Time: 8.820
+Point searching on cover 17 with bound 100000000.
+Time: 9.400
+Point searching on cover 18 with bound 100000000.
+Time: 6.650
+Point searching on cover 19 with bound 100000000.
+Time: 9.010
+Point searching on cover 20 with bound 100000000.
+Time: 8.950
+Point searching on cover 21 with bound 100000000.
+Time: 8.280
+Point searching on cover 22 with bound 100000000.
+Time: 7.840
+Point searching on cover 23 with bound 100000000.
+Time: 10.290
+Point searching on cover 24 with bound 100000000.
+Time: 8.340
+Point searching on cover 25 with bound 100000000.
+Time: 10.300
+Point searching on cover 26 with bound 100000000.
+Time: 9.110
+Point searching on cover 1 with bound 1000000000.
+Time: 16.920
+Point searching on cover 2 with bound 1000000000.
+Time: 16.140
+Point searching on cover 3 with bound 1000000000.
+Time: 22.060
+Point searching on cover 4 with bound 1000000000.
+Time: 23.340
+Point searching on cover 5 with bound 1000000000.
+Time: 21.190
+Point searching on cover 6 with bound 1000000000.
+Time: 21.990
+Point searching on cover 7 with bound 1000000000.
+Time: 18.930
+Point searching on cover 8 with bound 1000000000.
+Time: 18.690
+Point searching on cover 9 with bound 1000000000.
+Time: 16.700
+Point searching on cover 10 with bound 1000000000.
+Time: 17.100
+Point searching on cover 11 with bound 1000000000.
+Time: 17.400
+Point searching on cover 12 with bound 1000000000.
+Time: 17.260
+Point searching on cover 13 with bound 1000000000.
+Time: 18.060
+Point searching on cover 14 with bound 1000000000.
+Time: 18.570
+Point searching on cover 15 with bound 1000000000.
+Time: 19.230
+Point searching on cover 16 with bound 1000000000.
+Time: 19.500
+Point searching on cover 17 with bound 1000000000.
+Time: 18.170
+Point searching on cover 18 with bound 1000000000.
+Time: 18.150
+Point searching on cover 19 with bound 1000000000.
+Time: 18.850
+Point searching on cover 20 with bound 1000000000.
+Time: 17.680
+Point searching on cover 21 with bound 1000000000.
+Time: 19.500
+Point searching on cover 22 with bound 1000000000.
+Time: 17.220
+Point searching on cover 23 with bound 1000000000.
+Time: 19.330
+Point searching on cover 24 with bound 1000000000.
+Time: 19.890
+Point searching on cover 25 with bound 1000000000.
+Time: 19.900
+Point searching on cover 26 with bound 1000000000.
+Time: 18.660
+We failed for k = 117092530!
+Working on k = 117839170.
+Doing 12-descent for E_k.
+Doing twelve descent 1 of 1.
+Time: 12.730
+Point searching on cover 1 with bound 1000.
+Time: 7.730
+Point searching on cover 2 with bound 1000.
+Time: 8.510
+Found point with canonical height 191.503189694999880322896566600.
+Total time needed was 92.660 sec.
+Working on k = 120813050.
+Doing 12-descent for E_k^3.
+Doing twelve descent 1 of 1.
+Time: 10.210
+Point searching on cover 1 with bound 1000.
+Time: 4.570
+Point searching on cover 2 with bound 1000.
+Time: 4.570
+Point searching on cover 1 with bound 10000.
+Time: 10.350
+Point searching on cover 2 with bound 10000.
+Time: 10.190
+Point searching on cover 1 with bound 100000.
+Time: 10.080
+Point searching on cover 2 with bound 100000.
+Time: 10.490
+Point searching on cover 1 with bound 1000000.
+Time: 11.390
+Point searching on cover 2 with bound 1000000.
+Time: 10.220
+Point searching on cover 1 with bound 10000000.
+Time: 11.240
+Point searching on cover 2 with bound 10000000.
+Time: 12.590
+Point searching on cover 1 with bound 100000000.
+Time: 12.860
+Point searching on cover 2 with bound 100000000.
+Time: 12.060
+Point searching on cover 1 with bound 1000000000.
+Time: 13.240
+Point searching on cover 2 with bound 1000000000.
+Time: 13.590
+We failed for k = 120813050!
+Working on k = 124596074.
+Doing 12-descent for E_(-k^2).
+Doing twelve descent 1 of 1.
+Time: 9.930
+Point searching on cover 1 with bound 1000.
+Time: 3.320
+Found point with canonical height 248.051496525613443249508372922.
+Total time needed was 80.450 sec.
+Working on k = 125946290.
+Doing 12-descent for E_(-k^2).
+Doing twelve descent 1 of 1.
+Time: 10.510
+Point searching on cover 1 with bound 1000.
+Time: 4.620
+Point searching on cover 2 with bound 1000.
+Time: 5.480
+Found point with canonical height 124.566845450462794557143973358.
+Total time needed was 83.370 sec.
+Working on k = 128294930.
+Doing 12-descent for E_k.
+Doing twelve descent 1 of 1.
+Time: 12.000
+Point searching on cover 1 with bound 1000.
+Time: 10.230
+Point searching on cover 2 with bound 1000.
+Time: 9.320
+Found point with canonical height 389.293314100072383254962917787.
+Total time needed was 77.250 sec.
+Working on k = 130187450.
+Doing 12-descent for E_k^3.
+Doing twelve descent 1 of 1.
+Time: 7.850
+Point searching on cover 1 with bound 1000.
+Time: 4.410
+Point searching on cover 2 with bound 1000.
+Time: 4.370
+Point searching on cover 1 with bound 10000.
+Time: 10.060
+Point searching on cover 2 with bound 10000.
+Time: 10.010
+Point searching on cover 1 with bound 100000.
+Time: 10.030
+Point searching on cover 2 with bound 100000.
+Time: 9.980
+Point searching on cover 1 with bound 1000000.
+Time: 14.190
+Point searching on cover 2 with bound 1000000.
+Time: 14.330
+Point searching on cover 1 with bound 10000000.
+Time: 15.560
+Point searching on cover 2 with bound 10000000.
+Time: 15.580
+Point searching on cover 1 with bound 100000000.
+Time: 12.360
+Point searching on cover 2 with bound 100000000.
+Time: 11.790
+Point searching on cover 1 with bound 1000000000.
+Time: 21.760
+Point searching on cover 2 with bound 1000000000.
+Time: 21.530
+We failed for k = 130187450!
+Working on k = 134957090.
+Doing 12-descent for E_(-k^2).
+Doing twelve descent 1 of 1.
+Time: 10.620
+Point searching on cover 1 with bound 1000.
+Time: 13.420
+Found point with canonical height 306.685286440943946619436936704.
+Total time needed was 68.250 sec.
+Working on k = 139433050.
+Doing 12-descent for E_(16*k^2).
+Doing twelve descent 1 of 4.
+Time: 9.690
+Doing twelve descent 2 of 4.
+Time: 8.910
+Doing twelve descent 3 of 4.
+Time: 9.090
+Doing twelve descent 4 of 4.
+Time: 6.660
+Point searching on cover 1 with bound 1000.
+Time: 8.540
+Point searching on cover 2 with bound 1000.
+Time: 8.180
+Point searching on cover 3 with bound 1000.
+Time: 7.170
+Point searching on cover 4 with bound 1000.
+Time: 7.930
+Point searching on cover 5 with bound 1000.
+Time: 6.620
+Point searching on cover 6 with bound 1000.
+Time: 6.410
+Point searching on cover 7 with bound 1000.
+Time: 7.350
+Point searching on cover 8 with bound 1000.
+Time: 6.370
+Point searching on cover 1 with bound 10000.
+Time: 8.180
+Point searching on cover 2 with bound 10000.
+Time: 8.160
+Point searching on cover 3 with bound 10000.
+Time: 6.520
+Point searching on cover 4 with bound 10000.
+Time: 6.650
+Point searching on cover 5 with bound 10000.
+Time: 6.560
+Point searching on cover 6 with bound 10000.
+Time: 6.370
+Point searching on cover 7 with bound 10000.
+Time: 6.200
+Point searching on cover 8 with bound 10000.
+Time: 6.340
+Point searching on cover 1 with bound 100000.
+Time: 10.900
+Point searching on cover 2 with bound 100000.
+Time: 10.880
+Point searching on cover 3 with bound 100000.
+Time: 8.620
+Found point with canonical height 616.875749396981339965161644024.
+Total time needed was 196.360 sec.
+Working on k = 145126010.
+Doing 12-descent for E_k.
+Doing twelve descent 1 of 1.
+Time: 13.580
+Point searching on cover 1 with bound 1000.
+Time: 8.400
+Found point with canonical height 185.190340812990011068179820230.
+Total time needed was 89.410 sec.
+Working on k = 145650170.
+Doing 12-descent for E_k.
+Doing twelve descent 1 of 1.
+Time: 12.820
+Point searching on cover 1 with bound 1000.
+Time: 7.650
+Found point with canonical height 186.752343987973389845908432730.
+Total time needed was 56.200 sec.
+Working on k = 149477050.
+Doing 12-descent for E_(16*k^2).
+Doing twelve descent 1 of 4.
+Time: 7.830
+Doing twelve descent 2 of 4.
+Time: 9.400
+Doing twelve descent 3 of 4.
+Time: 8.430
+Doing twelve descent 4 of 4.
+Time: 8.260
+Point searching on cover 1 with bound 1000.
+Time: 11.060
+Point searching on cover 2 with bound 1000.
+Time: 11.330
+Point searching on cover 3 with bound 1000.
+Time: 10.040
+Point searching on cover 4 with bound 1000.
+Time: 9.160
+Point searching on cover 5 with bound 1000.
+Time: 10.330
+Point searching on cover 6 with bound 1000.
+Time: 9.690
+Point searching on cover 7 with bound 1000.
+Time: 11.290
+Point searching on cover 8 with bound 1000.
+Time: 11.110
+Point searching on cover 1 with bound 10000.
+Time: 10.960
+Point searching on cover 2 with bound 10000.
+Time: 11.270
+Point searching on cover 3 with bound 10000.
+Time: 9.510
+Point searching on cover 4 with bound 10000.
+Time: 9.120
+Point searching on cover 5 with bound 10000.
+Time: 9.590
+Point searching on cover 6 with bound 10000.
+Time: 9.620
+Point searching on cover 7 with bound 10000.
+Time: 9.850
+Point searching on cover 8 with bound 10000.
+Time: 9.660
+Point searching on cover 1 with bound 100000.
+Time: 11.050
+Point searching on cover 2 with bound 100000.
+Time: 11.140
+Point searching on cover 3 with bound 100000.
+Time: 9.520
+Point searching on cover 4 with bound 100000.
+Time: 9.200
+Point searching on cover 5 with bound 100000.
+Time: 9.540
+Point searching on cover 6 with bound 100000.
+Time: 9.560
+Point searching on cover 7 with bound 100000.
+Time: 9.760
+Point searching on cover 8 with bound 100000.
+Time: 9.870
+Point searching on cover 1 with bound 1000000.
+Time: 15.140
+Point searching on cover 2 with bound 1000000.
+Time: 14.920
+Point searching on cover 3 with bound 1000000.
+Time: 13.670
+Point searching on cover 4 with bound 1000000.
+Time: 11.510
+Point searching on cover 5 with bound 1000000.
+Time: 13.940
+Point searching on cover 6 with bound 1000000.
+Time: 12.280
+Point searching on cover 7 with bound 1000000.
+Time: 13.190
+Point searching on cover 8 with bound 1000000.
+Time: 13.770
+Point searching on cover 1 with bound 10000000.
+Time: 11.760
+Point searching on cover 2 with bound 10000000.
+Time: 13.660
+Point searching on cover 3 with bound 10000000.
+Time: 9.550
+Point searching on cover 4 with bound 10000000.
+Time: 10.160
+Point searching on cover 5 with bound 10000000.
+Time: 9.430
+Point searching on cover 6 with bound 10000000.
+Time: 10.950
+Point searching on cover 7 with bound 10000000.
+Time: 9.640
+Point searching on cover 8 with bound 10000000.
+Time: 10.120
+Point searching on cover 1 with bound 100000000.
+Time: 8.550
+Point searching on cover 2 with bound 100000000.
+Time: 8.480
+Point searching on cover 3 with bound 100000000.
+Time: 8.660
+Point searching on cover 4 with bound 100000000.
+Time: 7.940
+Point searching on cover 5 with bound 100000000.
+Time: 6.510
+Point searching on cover 6 with bound 100000000.
+Time: 6.430
+Point searching on cover 7 with bound 100000000.
+Time: 6.850
+Point searching on cover 8 with bound 100000000.
+Time: 5.660
+Point searching on cover 1 with bound 1000000000.
+Time: 14.040
+Point searching on cover 2 with bound 1000000000.
+Time: 14.190
+Point searching on cover 3 with bound 1000000000.
+Time: 11.990
+Point searching on cover 4 with bound 1000000000.
+Time: 11.150
+Point searching on cover 5 with bound 1000000000.
+Time: 13.770
+Point searching on cover 6 with bound 1000000000.
+Time: 11.960
+Point searching on cover 7 with bound 1000000000.
+Time: 12.460
+Point searching on cover 8 with bound 1000000000.
+Time: 13.480
+We failed for k = 149477050!
+Working on k = 154814690.
+Doing 12-descent for E_(-k^2).
+Doing twelve descent 1 of 1.
+Time: 10.530
+Point searching on cover 1 with bound 1000.
+Time: 18.790
+Point searching on cover 2 with bound 1000.
+Time: 16.380
+Found point with canonical height 291.724798071126077166625394412.
+Total time needed was 100.040 sec.
+Working on k = 156818810.
+Doing 12-descent for E_k.
+Doing twelve descent 1 of 1.
+Time: 14.560
+Point searching on cover 1 with bound 1000.
+Time: 7.650
+Point searching on cover 2 with bound 1000.
+Time: 8.450
+Found point with canonical height 230.097821767349215447403423728.
+Total time needed was 82.050 sec.
+Working on k = 160629554.
+Doing 12-descent for E_k.
+Doing twelve descent 1 of 1.
+Time: 17.060
+Point searching on cover 1 with bound 1000.
+Time: 2.740
+Point searching on cover 2 with bound 1000.
+Time: 3.660
+Found point with canonical height 314.556097876630783330372708974.
+Total time needed was 72.790 sec.
+Working on k = 160631290.
+Doing 12-descent for E_k^3.
+Doing twelve descent 1 of 13.
+Time: 9.140
+Doing twelve descent 2 of 13.
+Time: 8.850
+Doing twelve descent 3 of 13.
+Time: 8.590
+Doing twelve descent 4 of 13.
+Time: 9.230
+Doing twelve descent 5 of 13.
+Time: 8.930
+Doing twelve descent 6 of 13.
+Time: 9.620
+Doing twelve descent 7 of 13.
+Time: 8.950
+Doing twelve descent 8 of 13.
+Time: 8.690
+Doing twelve descent 9 of 13.
+Time: 8.840
+Doing twelve descent 10 of 13.
+Time: 8.420
+Doing twelve descent 11 of 13.
+Time: 8.780
+Doing twelve descent 12 of 13.
+Time: 9.370
+Doing twelve descent 13 of 13.
+Time: 8.940
+Point searching on cover 1 with bound 1000.
+Time: 11.950
+Point searching on cover 2 with bound 1000.
+Time: 9.700
+Point searching on cover 3 with bound 1000.
+Time: 13.400
+Point searching on cover 4 with bound 1000.
+Time: 12.050
+Point searching on cover 5 with bound 1000.
+Time: 13.960
+Point searching on cover 6 with bound 1000.
+Time: 11.030
+Point searching on cover 7 with bound 1000.
+Time: 11.680
+Point searching on cover 8 with bound 1000.
+Time: 11.270
+Point searching on cover 9 with bound 1000.
+Time: 10.350
+Point searching on cover 10 with bound 1000.
+Time: 11.050
+Point searching on cover 11 with bound 1000.
+Time: 12.250
+Point searching on cover 12 with bound 1000.
+Time: 10.420
+Point searching on cover 13 with bound 1000.
+Time: 13.260
+Point searching on cover 14 with bound 1000.
+Time: 11.080
+Point searching on cover 15 with bound 1000.
+Time: 11.470
+Point searching on cover 16 with bound 1000.
+Time: 11.090
+Point searching on cover 17 with bound 1000.
+Time: 11.360
+Point searching on cover 18 with bound 1000.
+Time: 12.940
+Point searching on cover 19 with bound 1000.
+Time: 11.240
+Point searching on cover 20 with bound 1000.
+Time: 11.270
+Point searching on cover 21 with bound 1000.
+Time: 10.350
+Point searching on cover 22 with bound 1000.
+Time: 11.830
+Point searching on cover 23 with bound 1000.
+Time: 10.180
+Point searching on cover 24 with bound 1000.
+Time: 10.000
+Point searching on cover 25 with bound 1000.
+Time: 10.080
+Point searching on cover 26 with bound 1000.
+Time: 10.830
+Point searching on cover 1 with bound 10000.
+Time: 9.720
+Point searching on cover 2 with bound 10000.
+Time: 9.850
+Point searching on cover 3 with bound 10000.
+Time: 10.720
+Point searching on cover 4 with bound 10000.
+Time: 10.890
+Point searching on cover 5 with bound 10000.
+Time: 10.360
+Point searching on cover 6 with bound 10000.
+Time: 10.230
+Point searching on cover 7 with bound 10000.
+Time: 10.370
+Point searching on cover 8 with bound 10000.
+Time: 10.450
+Point searching on cover 9 with bound 10000.
+Time: 10.310
+Point searching on cover 10 with bound 10000.
+Time: 10.300
+Point searching on cover 11 with bound 10000.
+Time: 10.470
+Point searching on cover 12 with bound 10000.
+Time: 10.380
+Point searching on cover 13 with bound 10000.
+Time: 10.270
+Point searching on cover 14 with bound 10000.
+Time: 10.280
+Point searching on cover 15 with bound 10000.
+Time: 9.990
+Point searching on cover 16 with bound 10000.
+Time: 10.300
+Point searching on cover 17 with bound 10000.
+Time: 10.520
+Point searching on cover 18 with bound 10000.
+Time: 10.530
+Point searching on cover 19 with bound 10000.
+Time: 10.430
+Point searching on cover 20 with bound 10000.
+Time: 10.430
+Point searching on cover 21 with bound 10000.
+Time: 10.310
+Point searching on cover 22 with bound 10000.
+Time: 10.240
+Point searching on cover 23 with bound 10000.
+Time: 10.120
+Point searching on cover 24 with bound 10000.
+Time: 10.170
+Point searching on cover 25 with bound 10000.
+Time: 10.030
+Point searching on cover 26 with bound 10000.
+Time: 10.010
+Point searching on cover 1 with bound 100000.
+Time: 9.820
+Point searching on cover 2 with bound 100000.
+Time: 10.000
+Point searching on cover 3 with bound 100000.
+Time: 10.860
+Point searching on cover 4 with bound 100000.
+Time: 10.300
+Point searching on cover 5 with bound 100000.
+Time: 10.270
+Point searching on cover 6 with bound 100000.
+Time: 10.130
+Point searching on cover 7 with bound 100000.
+Time: 10.280
+Point searching on cover 8 with bound 100000.
+Time: 10.330
+Point searching on cover 9 with bound 100000.
+Time: 9.970
+Point searching on cover 10 with bound 100000.
+Time: 10.220
+Point searching on cover 11 with bound 100000.
+Time: 10.350
+Point searching on cover 12 with bound 100000.
+Time: 10.260
+Point searching on cover 13 with bound 100000.
+Time: 10.150
+Point searching on cover 14 with bound 100000.
+Time: 10.200
+Point searching on cover 15 with bound 100000.
+Time: 10.150
+Point searching on cover 16 with bound 100000.
+Time: 10.190
+Point searching on cover 17 with bound 100000.
+Time: 10.450
+Point searching on cover 18 with bound 100000.
+Time: 10.430
+Point searching on cover 19 with bound 100000.
+Time: 10.310
+Point searching on cover 20 with bound 100000.
+Time: 10.090
+Point searching on cover 21 with bound 100000.
+Time: 9.970
+Point searching on cover 22 with bound 100000.
+Time: 10.390
+Point searching on cover 23 with bound 100000.
+Time: 10.250
+Point searching on cover 24 with bound 100000.
+Time: 10.100
+Point searching on cover 25 with bound 100000.
+Time: 9.970
+Point searching on cover 26 with bound 100000.
+Time: 10.140
+Point searching on cover 1 with bound 1000000.
+Time: 11.470
+Point searching on cover 2 with bound 1000000.
+Time: 13.070
+Point searching on cover 3 with bound 1000000.
+Time: 12.820
+Point searching on cover 4 with bound 1000000.
+Time: 13.560
+Point searching on cover 5 with bound 1000000.
+Time: 14.430
+Point searching on cover 6 with bound 1000000.
+Time: 13.630
+Point searching on cover 7 with bound 1000000.
+Time: 14.310
+Point searching on cover 8 with bound 1000000.
+Time: 11.480
+Point searching on cover 9 with bound 1000000.
+Time: 10.650
+Point searching on cover 10 with bound 1000000.
+Time: 13.640
+Point searching on cover 11 with bound 1000000.
+Time: 12.520
+Point searching on cover 12 with bound 1000000.
+Time: 13.250
+Point searching on cover 13 with bound 1000000.
+Time: 13.660
+Point searching on cover 14 with bound 1000000.
+Time: 11.870
+Point searching on cover 15 with bound 1000000.
+Time: 12.030
+Point searching on cover 16 with bound 1000000.
+Time: 12.230
+Point searching on cover 17 with bound 1000000.
+Time: 13.570
+Point searching on cover 18 with bound 1000000.
+Time: 13.520
+Point searching on cover 19 with bound 1000000.
+Time: 12.660
+Point searching on cover 20 with bound 1000000.
+Time: 13.310
+Point searching on cover 21 with bound 1000000.
+Time: 15.040
+Point searching on cover 22 with bound 1000000.
+Time: 14.130
+Point searching on cover 23 with bound 1000000.
+Time: 12.420
+Point searching on cover 24 with bound 1000000.
+Time: 10.570
+Point searching on cover 25 with bound 1000000.
+Time: 14.290
+Point searching on cover 26 with bound 1000000.
+Time: 10.750
+Point searching on cover 1 with bound 10000000.
+Time: 10.760
+Point searching on cover 2 with bound 10000000.
+Time: 12.300
+Point searching on cover 3 with bound 10000000.
+Time: 10.340
+Point searching on cover 4 with bound 10000000.
+Time: 10.630
+Point searching on cover 5 with bound 10000000.
+Time: 12.410
+Point searching on cover 6 with bound 10000000.
+Time: 12.550
+Point searching on cover 7 with bound 10000000.
+Time: 10.820
+Point searching on cover 8 with bound 10000000.
+Time: 13.250
+Point searching on cover 9 with bound 10000000.
+Time: 11.190
+Point searching on cover 10 with bound 10000000.
+Time: 13.360
+Point searching on cover 11 with bound 10000000.
+Time: 9.280
+Point searching on cover 12 with bound 10000000.
+Time: 12.540
+Point searching on cover 13 with bound 10000000.
+Time: 10.850
+Point searching on cover 14 with bound 10000000.
+Time: 12.660
+Point searching on cover 15 with bound 10000000.
+Time: 10.740
+Point searching on cover 16 with bound 10000000.
+Time: 11.910
+Point searching on cover 17 with bound 10000000.
+Time: 12.380
+Point searching on cover 18 with bound 10000000.
+Time: 14.020
+Point searching on cover 19 with bound 10000000.
+Time: 9.850
+Point searching on cover 20 with bound 10000000.
+Time: 11.760
+Point searching on cover 21 with bound 10000000.
+Time: 9.220
+Point searching on cover 22 with bound 10000000.
+Time: 12.780
+Point searching on cover 23 with bound 10000000.
+Time: 11.580
+Point searching on cover 24 with bound 10000000.
+Time: 10.290
+Point searching on cover 25 with bound 10000000.
+Time: 10.770
+Point searching on cover 26 with bound 10000000.
+Time: 11.690
+Point searching on cover 1 with bound 100000000.
+Time: 12.100
+Point searching on cover 2 with bound 100000000.
+Time: 12.490
+Point searching on cover 3 with bound 100000000.
+Time: 12.500
+Point searching on cover 4 with bound 100000000.
+Time: 13.520
+Point searching on cover 5 with bound 100000000.
+Time: 13.760
+Point searching on cover 6 with bound 100000000.
+Time: 13.280
+Point searching on cover 7 with bound 100000000.
+Time: 13.270
+Point searching on cover 8 with bound 100000000.
+Time: 11.800
+Point searching on cover 9 with bound 100000000.
+Time: 11.930
+Point searching on cover 10 with bound 100000000.
+Time: 12.390
+Point searching on cover 11 with bound 100000000.
+Time: 11.880
+Point searching on cover 12 with bound 100000000.
+Time: 13.440
+Point searching on cover 13 with bound 100000000.
+Time: 12.650
+Point searching on cover 14 with bound 100000000.
+Time: 12.230
+Point searching on cover 15 with bound 100000000.
+Time: 12.670
+Point searching on cover 16 with bound 100000000.
+Time: 13.160
+Point searching on cover 17 with bound 100000000.
+Time: 13.510
+Point searching on cover 18 with bound 100000000.
+Time: 12.230
+Point searching on cover 19 with bound 100000000.
+Time: 12.380
+Point searching on cover 20 with bound 100000000.
+Time: 12.480
+Point searching on cover 21 with bound 100000000.
+Time: 13.180
+Point searching on cover 22 with bound 100000000.
+Time: 12.300
+Point searching on cover 23 with bound 100000000.
+Time: 13.470
+Point searching on cover 24 with bound 100000000.
+Time: 12.460
+Point searching on cover 25 with bound 100000000.
+Time: 11.320
+Point searching on cover 26 with bound 100000000.
+Time: 11.800
+Point searching on cover 1 with bound 1000000000.
+Time: 13.410
+Point searching on cover 2 with bound 1000000000.
+Time: 14.280
+Point searching on cover 3 with bound 1000000000.
+Time: 15.150
+Point searching on cover 4 with bound 1000000000.
+Time: 14.380
+Point searching on cover 5 with bound 1000000000.
+Time: 13.410
+Point searching on cover 6 with bound 1000000000.
+Time: 14.340
+Point searching on cover 7 with bound 1000000000.
+Time: 13.810
+Point searching on cover 8 with bound 1000000000.
+Time: 13.810
+Point searching on cover 9 with bound 1000000000.
+Time: 13.990
+Point searching on cover 10 with bound 1000000000.
+Time: 13.780
+Point searching on cover 11 with bound 1000000000.
+Time: 13.670
+Point searching on cover 12 with bound 1000000000.
+Time: 13.550
+Point searching on cover 13 with bound 1000000000.
+Time: 14.280
+Point searching on cover 14 with bound 1000000000.
+Time: 13.190
+Point searching on cover 15 with bound 1000000000.
+Time: 13.750
+Point searching on cover 16 with bound 1000000000.
+Time: 12.970
+Point searching on cover 17 with bound 1000000000.
+Time: 12.980
+Point searching on cover 18 with bound 1000000000.
+Time: 13.260
+Point searching on cover 19 with bound 1000000000.
+Time: 14.000
+Point searching on cover 20 with bound 1000000000.
+Time: 12.370
+Point searching on cover 21 with bound 1000000000.
+Time: 16.020
+Point searching on cover 22 with bound 1000000000.
+Time: 14.840
+Point searching on cover 23 with bound 1000000000.
+Time: 12.720
+Point searching on cover 24 with bound 1000000000.
+Time: 11.650
+Point searching on cover 25 with bound 1000000000.
+Time: 12.240
+Point searching on cover 26 with bound 1000000000.
+Time: 14.480
+We failed for k = 160631290!
+Working on k = 37796474.
+Doing 12-descent for E_(-k^2).
+Doing twelve descent 1 of 1.
+Time: 10.230
+Point searching on cover 1 with bound 1000.
+Time: 3.570
+Point searching on cover 2 with bound 1000.
+Time: 3.560
+Point searching on cover 1 with bound 10000.
+Time: 9.270
+Point searching on cover 2 with bound 10000.
+Time: 9.160
+Point searching on cover 1 with bound 100000.
+Time: 8.480
+Found point with canonical height 390.217220166062435157132653371.
+Total time needed was 88.940 sec.
+Working on k = 107634242.
+Doing 12-descent for E_(-k^2).
+Doing twelve descent 1 of 1.
+Time: 10.460
+Point searching on cover 1 with bound 1000.
+Time: 3.740
+Point searching on cover 2 with bound 1000.
+Time: 3.320
+Found point with canonical height 185.522287282162991682039082065.
+Total time needed was 70.560 sec.
+Working on k = 128327978.
+Doing 12-descent for E_k^3.
+Doing twelve descent 1 of 13.
+Time: 6.690
+Doing twelve descent 2 of 13.
+Time: 6.380
+Doing twelve descent 3 of 13.
+Time: 6.340
+Doing twelve descent 4 of 13.
+Time: 6.400
+Doing twelve descent 5 of 13.
+Time: 6.010
+Doing twelve descent 6 of 13.
+Time: 5.780
+Doing twelve descent 7 of 13.
+Time: 6.380
+Doing twelve descent 8 of 13.
+Time: 6.210
+Doing twelve descent 9 of 13.
+Time: 6.180
+Doing twelve descent 10 of 13.
+Time: 5.900
+Doing twelve descent 11 of 13.
+Time: 6.080
+Doing twelve descent 12 of 13.
+Time: 5.960
+Doing twelve descent 13 of 13.
+Time: 5.930
+Point searching on cover 1 with bound 1000.
+Time: 4.410
+Point searching on cover 2 with bound 1000.
+Time: 4.320
+Point searching on cover 3 with bound 1000.
+Time: 4.900
+Point searching on cover 4 with bound 1000.
+Time: 4.870
+Point searching on cover 5 with bound 1000.
+Time: 4.390
+Point searching on cover 6 with bound 1000.
+Time: 4.300
+Point searching on cover 7 with bound 1000.
+Time: 4.460
+Point searching on cover 8 with bound 1000.
+Time: 4.570
+Point searching on cover 9 with bound 1000.
+Time: 4.880
+Point searching on cover 10 with bound 1000.
+Time: 4.890
+Point searching on cover 11 with bound 1000.
+Time: 4.870
+Point searching on cover 12 with bound 1000.
+Time: 4.890
+Point searching on cover 13 with bound 1000.
+Time: 4.360
+Point searching on cover 14 with bound 1000.
+Time: 4.310
+Point searching on cover 15 with bound 1000.
+Time: 4.290
+Point searching on cover 16 with bound 1000.
+Time: 4.360
+Point searching on cover 17 with bound 1000.
+Time: 4.330
+Point searching on cover 18 with bound 1000.
+Time: 4.390
+Point searching on cover 19 with bound 1000.
+Time: 4.990
+Point searching on cover 20 with bound 1000.
+Time: 4.940
+Point searching on cover 21 with bound 1000.
+Time: 4.500
+Point searching on cover 22 with bound 1000.
+Time: 4.550
+Point searching on cover 23 with bound 1000.
+Time: 4.290
+Point searching on cover 24 with bound 1000.
+Time: 4.360
+Point searching on cover 25 with bound 1000.
+Time: 4.340
+Point searching on cover 26 with bound 1000.
+Time: 4.410
+Point searching on cover 1 with bound 10000.
+Time: 9.740
+Point searching on cover 2 with bound 10000.
+Time: 10.010
+Point searching on cover 3 with bound 10000.
+Time: 10.800
+Point searching on cover 4 with bound 10000.
+Time: 10.830
+Point searching on cover 5 with bound 10000.
+Time: 10.160
+Point searching on cover 6 with bound 10000.
+Time: 10.010
+Point searching on cover 7 with bound 10000.
+Time: 10.160
+Point searching on cover 8 with bound 10000.
+Time: 10.240
+Point searching on cover 9 with bound 10000.
+Time: 10.870
+Point searching on cover 10 with bound 10000.
+Time: 10.890
+Point searching on cover 11 with bound 10000.
+Time: 10.830
+Point searching on cover 12 with bound 10000.
+Time: 10.630
+Point searching on cover 13 with bound 10000.
+Time: 9.810
+Point searching on cover 14 with bound 10000.
+Time: 10.030
+Point searching on cover 15 with bound 10000.
+Time: 9.990
+Point searching on cover 16 with bound 10000.
+Time: 10.280
+Point searching on cover 17 with bound 10000.
+Time: 10.130
+Point searching on cover 18 with bound 10000.
+Time: 10.180
+Point searching on cover 19 with bound 10000.
+Time: 10.880
+Point searching on cover 20 with bound 10000.
+Time: 10.910
+Point searching on cover 21 with bound 10000.
+Time: 10.320
+Point searching on cover 22 with bound 10000.
+Time: 10.160
+Point searching on cover 23 with bound 10000.
+Time: 10.080
+Point searching on cover 24 with bound 10000.
+Time: 10.140
+Point searching on cover 25 with bound 10000.
+Time: 10.130
+Point searching on cover 26 with bound 10000.
+Time: 10.190
+Point searching on cover 1 with bound 100000.
+Time: 9.740
+Point searching on cover 2 with bound 100000.
+Time: 10.010
+Point searching on cover 3 with bound 100000.
+Time: 10.810
+Point searching on cover 4 with bound 100000.
+Time: 10.820
+Point searching on cover 5 with bound 100000.
+Time: 10.150
+Point searching on cover 6 with bound 100000.
+Time: 9.970
+Point searching on cover 7 with bound 100000.
+Time: 10.410
+Point searching on cover 8 with bound 100000.
+Time: 10.540
+Point searching on cover 9 with bound 100000.
+Time: 10.800
+Point searching on cover 10 with bound 100000.
+Time: 10.890
+Point searching on cover 11 with bound 100000.
+Time: 10.770
+Point searching on cover 12 with bound 100000.
+Time: 10.620
+Point searching on cover 13 with bound 100000.
+Time: 10.000
+Point searching on cover 14 with bound 100000.
+Time: 10.010
+Point searching on cover 15 with bound 100000.
+Time: 9.950
+Point searching on cover 16 with bound 100000.
+Time: 9.990
+Point searching on cover 17 with bound 100000.
+Time: 10.130
+Point searching on cover 18 with bound 100000.
+Time: 9.930
+Point searching on cover 19 with bound 100000.
+Time: 10.810
+Point searching on cover 20 with bound 100000.
+Time: 10.860
+Point searching on cover 21 with bound 100000.
+Time: 10.320
+Point searching on cover 22 with bound 100000.
+Time: 10.400
+Point searching on cover 23 with bound 100000.
+Time: 10.030
+Point searching on cover 24 with bound 100000.
+Time: 10.110
+Point searching on cover 25 with bound 100000.
+Time: 10.060
+Point searching on cover 26 with bound 100000.
+Time: 10.130
+Point searching on cover 1 with bound 1000000.
+Time: 11.810
+Point searching on cover 2 with bound 1000000.
+Time: 13.070
+Point searching on cover 3 with bound 1000000.
+Time: 13.360
+Point searching on cover 4 with bound 1000000.
+Time: 12.880
+Point searching on cover 5 with bound 1000000.
+Time: 12.980
+Point searching on cover 6 with bound 1000000.
+Time: 11.870
+Point searching on cover 7 with bound 1000000.
+Time: 12.490
+Point searching on cover 8 with bound 1000000.
+Time: 14.340
+Point searching on cover 9 with bound 1000000.
+Time: 14.520
+Point searching on cover 10 with bound 1000000.
+Time: 14.050
+Point searching on cover 11 with bound 1000000.
+Time: 11.720
+Point searching on cover 12 with bound 1000000.
+Time: 13.090
+Point searching on cover 13 with bound 1000000.
+Time: 12.790
+Point searching on cover 14 with bound 1000000.
+Time: 12.160
+Point searching on cover 15 with bound 1000000.
+Time: 13.500
+Point searching on cover 16 with bound 1000000.
+Time: 10.740
+Point searching on cover 17 with bound 1000000.
+Time: 13.110
+Point searching on cover 18 with bound 1000000.
+Time: 12.910
+Point searching on cover 19 with bound 1000000.
+Time: 14.570
+Point searching on cover 20 with bound 1000000.
+Time: 14.060
+Point searching on cover 21 with bound 1000000.
+Time: 12.820
+Point searching on cover 22 with bound 1000000.
+Time: 11.590
+Point searching on cover 23 with bound 1000000.
+Time: 11.790
+Point searching on cover 24 with bound 1000000.
+Time: 12.720
+Point searching on cover 25 with bound 1000000.
+Time: 13.240
+Point searching on cover 26 with bound 1000000.
+Time: 13.650
+Point searching on cover 1 with bound 10000000.
+Time: 15.230
+Point searching on cover 2 with bound 10000000.
+Time: 17.150
+Point searching on cover 3 with bound 10000000.
+Time: 16.260
+Point searching on cover 4 with bound 10000000.
+Time: 16.490
+Point searching on cover 5 with bound 10000000.
+Time: 17.290
+Point searching on cover 6 with bound 10000000.
+Time: 14.180
+Point searching on cover 7 with bound 10000000.
+Time: 14.850
+Point searching on cover 8 with bound 10000000.
+Time: 15.810
+Point searching on cover 9 with bound 10000000.
+Time: 15.850
+Point searching on cover 10 with bound 10000000.
+Time: 16.930
+Point searching on cover 11 with bound 10000000.
+Time: 17.460
+Point searching on cover 12 with bound 10000000.
+Time: 17.070
+Point searching on cover 13 with bound 10000000.
+Time: 15.900
+Point searching on cover 14 with bound 10000000.
+Time: 16.570
+Point searching on cover 15 with bound 10000000.
+Time: 15.600
+Point searching on cover 16 with bound 10000000.
+Time: 14.800
+Point searching on cover 17 with bound 10000000.
+Time: 16.300
+Point searching on cover 18 with bound 10000000.
+Time: 15.860
+Point searching on cover 19 with bound 10000000.
+Time: 16.950
+Point searching on cover 20 with bound 10000000.
+Time: 17.520
+Point searching on cover 21 with bound 10000000.
+Time: 16.190
+Point searching on cover 22 with bound 10000000.
+Time: 15.970
+Point searching on cover 23 with bound 10000000.
+Time: 17.000
+Point searching on cover 24 with bound 10000000.
+Time: 14.550
+Point searching on cover 25 with bound 10000000.
+Time: 15.350
+Point searching on cover 26 with bound 10000000.
+Time: 15.450
+Point searching on cover 1 with bound 100000000.
+Time: 9.250
+Point searching on cover 2 with bound 100000000.
+Time: 8.890
+Point searching on cover 3 with bound 100000000.
+Time: 8.740
+Point searching on cover 4 with bound 100000000.
+Time: 10.220
+Point searching on cover 5 with bound 100000000.
+Time: 10.120
+Point searching on cover 6 with bound 100000000.
+Time: 8.570
+Point searching on cover 7 with bound 100000000.
+Time: 10.020
+Point searching on cover 8 with bound 100000000.
+Time: 9.030
+Point searching on cover 9 with bound 100000000.
+Time: 11.580
+Point searching on cover 10 with bound 100000000.
+Time: 10.130
+Point searching on cover 11 with bound 100000000.
+Time: 12.250
+Point searching on cover 12 with bound 100000000.
+Time: 11.220
+Point searching on cover 13 with bound 100000000.
+Time: 8.380
+Point searching on cover 14 with bound 100000000.
+Time: 9.420
+Point searching on cover 15 with bound 100000000.
+Time: 11.900
+Point searching on cover 16 with bound 100000000.
+Time: 9.340
+Point searching on cover 17 with bound 100000000.
+Time: 10.280
+Point searching on cover 18 with bound 100000000.
+Time: 9.600
+Point searching on cover 19 with bound 100000000.
+Time: 10.160
+Point searching on cover 20 with bound 100000000.
+Time: 10.390
+Point searching on cover 21 with bound 100000000.
+Time: 10.900
+Point searching on cover 22 with bound 100000000.
+Time: 9.920
+Point searching on cover 23 with bound 100000000.
+Time: 8.790
+Point searching on cover 24 with bound 100000000.
+Time: 9.590
+Point searching on cover 25 with bound 100000000.
+Time: 7.880
+Point searching on cover 26 with bound 100000000.
+Time: 8.810
+Point searching on cover 1 with bound 1000000000.
+Time: 12.960
+Point searching on cover 2 with bound 1000000000.
+Time: 11.610
+Point searching on cover 3 with bound 1000000000.
+Time: 13.290
+Point searching on cover 4 with bound 1000000000.
+Time: 15.430
+Point searching on cover 5 with bound 1000000000.
+Time: 13.250
+Point searching on cover 6 with bound 1000000000.
+Time: 11.790
+Point searching on cover 7 with bound 1000000000.
+Time: 13.450
+Point searching on cover 8 with bound 1000000000.
+Time: 14.430
+Point searching on cover 9 with bound 1000000000.
+Time: 14.380
+Point searching on cover 10 with bound 1000000000.
+Time: 13.900
+Point searching on cover 11 with bound 1000000000.
+Time: 13.080
+Point searching on cover 12 with bound 1000000000.
+Time: 13.000
+Point searching on cover 13 with bound 1000000000.
+Time: 13.640
+Point searching on cover 14 with bound 1000000000.
+Time: 13.810
+Point searching on cover 15 with bound 1000000000.
+Time: 13.580
+Point searching on cover 16 with bound 1000000000.
+Time: 12.260
+Point searching on cover 17 with bound 1000000000.
+Time: 12.340
+Point searching on cover 18 with bound 1000000000.
+Time: 12.580
+Point searching on cover 19 with bound 1000000000.
+Time: 13.520
+Point searching on cover 20 with bound 1000000000.
+Time: 15.470
+Point searching on cover 21 with bound 1000000000.
+Time: 13.200
+Point searching on cover 22 with bound 1000000000.
+Time: 14.410
+Point searching on cover 23 with bound 1000000000.
+Time: 13.550
+Point searching on cover 24 with bound 1000000000.
+Time: 13.220
+Point searching on cover 25 with bound 1000000000.
+Time: 13.660
+Point searching on cover 26 with bound 1000000000.
+Time: 14.350
+We failed for k = 128327978!
+Working on k = 136152074.
+Doing 12-descent for E_(-k^2).
+Doing twelve descent 1 of 1.
+Time: 11.030
+Point searching on cover 1 with bound 1000.
+Time: 3.330
+Found point with canonical height 168.487953079068553269304967998.
+Total time needed was 66.150 sec.
+
+Total time: 11180.990 seconds, Total memory usage: 928.84MB

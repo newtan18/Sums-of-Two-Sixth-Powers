@@ -1,0 +1,77 @@
+// Step 7 - As a last resort, do unconditional 2-descents. This involves
+// large class group computations.
+
+// When we know for sure we have the right rank, write generators to gens4.txt
+
+finalks := [ 49897450, 117092530, 120813050, 128327978, 130187450, 149477050, 160631290];
+
+// For 49897450 and 120813050 and 130187450 and 149477050, the rank of E_k, E_4k and E_(-k^2) should be zero.
+// For 117092530 and 160631290, the rank of E_k, E_4k and E_(-k^2) should all be 1.
+// For 128327978, the rank of E_k and E_(-k^2) should be 1, while the rank of E_(16*k^2) and E_(-4*k^4) should be zero.
+
+// Pick the elliptic curve so the Minkowski bound for 2-descent is minimal
+
+ind := [ 1, 1, 2, 4, 2, 1, 1 ];
+
+// Maximal Minkowski bound is for k = 160631290 and is 78720597.
+
+R<x> := PolynomialRing(Rationals());
+
+rankuppbound := [];
+
+for i in [1..#finalks] do
+  k := finalks[i];
+  curind := ind[i];
+  if (curind eq 1) then
+    const := k;
+  end if;
+  if (curind eq 2) then
+    const := 4*k;
+  end if;
+  if (curind eq 4) then
+    const := 16*k^2;
+  end if;
+  f := x^3 + const;
+  E := EllipticCurve([0,0,0,0,const]);
+  MB := MinkowskiBound(MaximalOrder(f));
+  printf "For k = %o, the Minkowski bound is %o.\n",k,MB;
+
+  SetVerbose("ClassGroup",1);
+  printf "Doing two descent.\n";
+  covs := TwoDescent(E : RemoveTorsion := true);
+  printf "Rank bound before Cassels-Tate is %o.\n",Valuation(#covs+1,2);
+  goodcovs := [];
+  printf "Doing the Cassels-Tate pairing.\n";
+  for i in [1..#covs] do
+    if &and[ CasselsTatePairing(covs[i],covs[j]) mod 2 eq 0 : j in [1..#covs] | j ne i] then
+      Append(~goodcovs,covs[i]);
+    end if;
+  end for;
+  rub := Valuation(#goodcovs+1,2);
+  printf "Rank bound after Cassels-Tate is %o.\n",rub;
+  Append(~rankuppbound,rub);
+end for;
+
+SetClassGroupBounds("GRH");
+
+for i in [1..#finalks] do
+  k := finalks[i];
+  printf "Finding generators for k = %o.\n",k;
+  curind := ind[i];
+  if (curind eq 1) then
+    const := k;
+  end if;
+  if (curind eq 2) then
+    const := 4*k;
+  end if;
+  if (curind eq 4) then
+    const := 16*k^2;
+  end if;
+  E := EllipticCurve([0,0,0,0,const]);
+  A, B, C := MordellWeilShaInformation(E : RankOnly := true, Silent := true);
+  if (A[2] eq rankuppbound[i]) and (A[1] eq A[2]) then
+    PrintFile("gens4.txt",Sprintf("<%o,%o,%o>,",k,curind,[ Eltseq(x) : x in Saturation(B,100) ]));
+  else
+    printf "Something is screwed up for k = %o.\n",k;
+  end if;
+end for;

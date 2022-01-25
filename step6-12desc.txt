@@ -1,0 +1,89 @@
+// This script is designed to find generators on rank one elliptic curves
+// by assuming GRH and doing a 12-descent for the remaining 30 values of k.
+// All generators are written to gens3.txt
+
+SetClassGroupBounds("GRH");
+
+load "stillbad.txt";
+tempuncondupper := uncondupper;
+load "highrankbad.txt";
+tempuncondupper := tempuncondupper cat uncondupper;
+stillbad := stillbad cat highrankbad;
+uncondupper := tempuncondupper;
+
+for i in [1..#stillbad] do
+  k := stillbad[i];
+  printf "Working on k = %o.\n",k;
+  constlist := [k,4*k,-k^2,16*k^2,k^3,-4*k^4];
+  ind := Min([ j : j in [1..6] | (uncondupper[i][j] eq 1) and (RootNumber(EllipticCurve([0,0,0,0,constlist[j]])) eq (-1))]);
+  const := constlist[ind];
+  if (ind eq 1) then
+    printf "Doing 12-descent for E_k.\n";
+  end if;
+  if (ind eq 2) then
+    printf "Doing 12-descent for E_4k.\n";
+  end if;
+  if (ind eq 3) then
+    printf "Doing 12-descent for E_(-k^2).\n";
+  end if;
+  if (ind eq 4) then
+    printf "Doing 12-descent for E_(16*k^2).\n";
+  end if;
+  if (ind eq 5) then
+    printf "Doing 12-descent for E_k^3.\n";
+  end if;
+  if (ind eq 6) then
+    printf "Doing 12-descent for E_(-4*k^4).\n";
+  end if;
+  t := Cputime();
+  E := EllipticCurve([0,0,0,0,const]);
+  C := TwoDescent(E : RemoveTorsion := true);
+  X := FourDescent(C[1] : RemoveTorsion := true);
+  _, mptoE := AssociatedEllipticCurve(X[1]);
+  // Note that E might not be a minimal model.
+  // So we make an isomorphism to map from the minimal model back to E.
+  chk, mptoE2 := IsIsomorphic(Codomain(mptoE),E);
+
+  covs, mps := ThreeDescent(E);
+
+  twelvecovers := [];
+  twelvemps := <>;
+
+  for i in [1..#covs] do
+    printf "Doing twelve descent %o of %o.\n",i,#covs;
+    time twelve, mps := TwelveDescent(covs[i],X[1]);
+    Append(~twelvecovers,twelve[1]);
+    Append(~twelvecovers,twelve[2]);
+    Append(~twelvemps,mps[1]);
+    Append(~twelvemps,mps[2]);
+  end for;
+
+  done := false;
+  bound := 10^3;
+  while (done eq false) do
+    it := 1;
+    while (done eq false and (it le #twelvecovers)) do
+      printf "Point searching on cover %o with bound %o.\n",it,bound;
+      time ps := PointSearch(twelvecovers[it],bound : OnlyOne := true);
+      if #ps gt 0 then
+        done := true;
+        P := mptoE2(mptoE(twelvemps[it](ps[1])));
+        printf "Found point with canonical height %o.\n",CanonicalHeight(P);
+	sat := Saturation([P],100);
+	totaltime := Cputime(t);
+	printf "Total time needed was %o sec.\n",totaltime;
+	PrintFile("gens3.txt",Sprintf("<%o,%o,%o,%o>",k,ind,[ Eltseq(s) : s in sat],totaltime));
+      else
+        it := it + 1;
+      end if;
+    end while;
+    if (done eq false) then
+      bound := bound*10;
+    end if;
+    if (bound gt 10^9) then
+      done := true;
+      printf "We failed for k = %o!\n",k;
+    end if;
+  end while;  
+end for;
+quit;

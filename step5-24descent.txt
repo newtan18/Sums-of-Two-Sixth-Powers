@@ -1,0 +1,186 @@
+// This script searches for generators for the 196 values of k
+// for which step 4 was insufficient.
+
+// It reads the file "superbadk.txt", and also parses rank information
+// from the step 4 log files.
+// It writes new generators to the file "gens2.txt" and values of k that
+// are still problematic to "stillbad.txt"
+
+// This script runs through the log files
+// and extracts the rank bounds for E_k, E_4k and E_k^3.
+
+// It also does 3-isogeny descents on all 6 curves as well as
+// a two descent on E_k^3 to obtain unconditional rank bounds on all six
+// elliptic curves.
+
+// The ordering of the curves is E_k, E_4k, E_(-k^2), E_(16k^2), E_k^3, E_(-4k^4)
+
+// Get an upper bound on the rank via 3-isogeny descent.
+iso3rank := function(E)
+  A1, mp1, A2, mp2, mp3 := ThreeIsogenySelmerGroups(E);
+  // Check kernels to see if there are rational points.
+  rnk := 0;
+  K1 := #RationalPoints(Kernel(mp3));
+  K2 := #RationalPoints(Kernel(DualIsogeny(mp3)));
+  if (K1 gt 1) or (K2 gt 1) then
+    rnk := -1;
+  end if;
+  rnk := rnk + Rank(A1) + Rank(A2);
+  return rnk;
+end function;
+
+load "superbadk.txt";
+Sort(~superbadk);
+
+printf "Part 1 - Finding unconditional rank bounds on all 6 curves.\n";
+unconditional_ranks := [];
+conditional_ranks := [];
+
+for i in [1..#superbadk] do
+  k := superbadk[i];
+  printf "Working on k = %o.\n",k;
+  ranklist := [ -1, -1, -1, -1, -1, -1 ];
+  filename := "step4logs/" cat IntegerToString(k,10) cat ".out";
+  str := Read(filename);
+  spl := Split(str,"_");
+  r1 := StringToInteger(spl[2][7]);
+  r2 := StringToInteger(spl[3][7]);
+  r3 := StringToInteger(spl[4][7]);
+  ranklist[1] := r1;
+  ranklist[2] := r2;
+  ranklist[5] := r3;
+
+  E1 := EllipticCurve([0,0,0,0,k]);
+  E2 := EllipticCurve([0,0,0,0,4*k]);
+  E3 := EllipticCurve([0,0,0,0,-k^2]);
+  E4 := EllipticCurve([0,0,0,0,16*k^2]);
+  E5 := EllipticCurve([0,0,0,0,k^3]);
+  E6 := EllipticCurve([0,0,0,0,-4*k^4]);
+
+  printf "Doing 3-isogeny descent on E3.\n";
+  ranklist[3] := iso3rank(E3);
+  printf "Rank upper bound is %o.\n",ranklist[3];
+  printf "Doing 3-isogeny descent on E4.\n";  
+  ranklist[4] := iso3rank(E4);
+  printf "Rank upper bound is %o.\n",ranklist[4];
+  printf "Doing 3-isogeny descent on E6.\n";    
+  ranklist[6] := iso3rank(E6);
+  printf "Rank upper bound is %o.\n",ranklist[6];
+
+  printf "Doing two-descent on E5.\n";
+  covs := TwoDescent(E5 : RemoveTorsion := true);
+  printf "Rank bound before Cassels-Tate is %o.\n",Valuation(#covs+1,2);
+  goodcovs := [];
+  printf "Doing the Cassels-Tate pairing.\n";
+  for i in [1..#covs] do
+    if &and[ CasselsTatePairing(covs[i],covs[j]) mod 2 eq 0 : j in [1..#covs] | j ne i] then
+      Append(~goodcovs,covs[i]);
+    end if;
+  end for;
+  twodescrank := Valuation(#goodcovs+1,2);
+  printf "Rank bound after Cassels-Tate is %o.\n",twodescrank;
+  if (twodescrank lt ranklist[5]) then
+    ranklist[5] := twodescrank;
+  end if;
+  printf "Unconditional ranks are %o.\n",ranklist;
+  Append(~unconditional_ranks,ranklist);
+end for;
+
+printf "Done with unconditional rank computing.\n";
+printf "Part 2 - Using GRH, 2 and 4 descents and point searching to try to find enough points.\n";
+
+SetClassGroupBounds("GRH");
+
+// The lists stillbad records the k's for which we aren't successful.
+// The lists condlower and condupper report lower and upper bounds
+// on ranks for all six curves
+
+stillbad := [];
+condlower := [];
+condupper := [];
+uncondupper := [];
+
+for i in [1..#superbadk] do
+  good := false;
+  k := superbadk[i];
+  printf "Working on k = %o.\n",k;
+  cur := unconditional_ranks[i];
+  E1 := EllipticCurve([0,0,0,0,k]);
+  E2 := EllipticCurve([0,0,0,0,4*k]);
+  E3 := EllipticCurve([0,0,0,0,-k^2]);
+  E4 := EllipticCurve([0,0,0,0,16*k^2]);
+  E5 := EllipticCurve([0,0,0,0,k^3]);
+  E6 := EllipticCurve([0,0,0,0,-4*k^4]);
+
+  A1, B1, C1 := MordellWeilShaInformation(E1 : RankOnly := true, Silent := true);
+  printf "Rank lower and upper for E1 from MWsha is %o-%o.\n",A1[1],A1[2];  
+  if (cur[1] eq A1[1]) and (A1[1] eq A1[2]) then
+    printf "E_k works!\n";
+    PrintFile("gens2.txt",Sprintf("<%o,%o,%o>,",k,1,[ Eltseq(x) : x in Saturation(B1,100) ]));
+    good := true;
+  end if;
+  if (good eq false) then
+    A2, B2, C2 := MordellWeilShaInformation(E2 : RankOnly := true, Silent := true);
+    printf "Rank lower and upper for E2 from MWsha is %o-%o.\n",A2[1],A2[2];  
+    if (cur[2] eq A2[1]) and (A2[1] eq A2[2]) then
+      printf "E_4k works!\n";
+      PrintFile("gens2.txt",Sprintf("<%o,%o,%o>,",k,2,[ Eltseq(x) : x in Saturation(B2,100) ]));    
+      good := true;
+    end if;
+  end if;
+  if (good eq false) then
+    A3, B3, C3 := MordellWeilShaInformation(E3 : RankOnly := true, Silent := true);
+    printf "Rank lower and upper for E3 from MWsha is %o-%o.\n",A3[1],A3[2];  
+    if (cur[3] eq A3[1]) and (A3[1] eq A3[2]) then
+      printf "E_(-k^2) works!\n";
+      PrintFile("gens2.txt",Sprintf("<%o,%o,%o>,",k,3,[ Eltseq(x) : x in Saturation(B3,100) ]));    
+      good := true;
+    end if;
+  end if;
+  if (good eq false) then
+    A4, B4, C4 := MordellWeilShaInformation(E4 : RankOnly := true, Silent := true);  
+    printf "Rank lower and upper for E4 from MWsha is %o-%o.\n",A4[1],A4[2];  
+    if (cur[4] eq A4[1]) and (A4[1] eq A4[2]) then
+      printf "E_(16*k^2) works!\n";
+      PrintFile("gens2.txt",Sprintf("<%o,%o,%o>,",k,4,[ Eltseq(x) : x in Saturation(B4,100) ]));
+      good := true;
+    end if;
+  end if;
+  if (good eq false) then
+    A5, B5, C5 := MordellWeilShaInformation(E5 : RankOnly := true, Silent := true);  
+    printf "Rank lower and upper for E5 from MWsha is %o-%o.\n",A5[1],A5[2];  
+    if (cur[5] eq A5[1]) and (A5[1] eq A5[2]) then
+      printf "E_(k^3) works!\n";
+      PrintFile("gens2.txt",Sprintf("<%o,%o,%o>,",k,5,[ Eltseq(x) : x in Saturation(B5,100) ]));
+      good := true;
+    end if;
+  end if;  
+  if (good eq false) then
+    A6, B6, C6 := MordellWeilShaInformation(E6 : RankOnly := true, Silent := true);  
+    printf "Rank lower and upper for E6 from MWsha is %o-%o.\n",A6[1],A6[2];  
+    if (cur[6] eq A6[1]) and (A6[1] eq A6[2]) then
+      printf "E_(-4*k^4) works!\n";
+      PrintFile("gens2.txt",Sprintf("<%o,%o,%o>,",k,6,[ Eltseq(x) : x in Saturation(B6,100) ]));
+      good := true;
+    end if;
+  end if;
+  if (good eq false) then
+    printf "k = %o is still bad.\n",k;
+    Append(~stillbad,k);
+    cu := [ Min(cur[1],A1[2]), Min(cur[2],A2[2]), Min(cur[3],A3[2]), Min(cur[4],A4[2]), Min(cur[5],A5[2]), Min(cur[6],A6[2]) ];
+    cl := [ A1[1], A2[1], A3[1], A4[1], A5[1], A6[1]];
+    printf "              Lower bounds are %o.\n",cl;
+    printf "  Conditional upper bounds are %o.\n",cu;
+    printf "Unconditional upper bounds are %o.\n",cur;
+    Append(~condlower,cl);
+    Append(~condupper,cu);
+    Append(~uncondupper,cur);
+  end if;
+end for;
+
+PrintFile("stillbad.txt",Sprintf("stillbad := %o;",stillbad));
+PrintFile("stillbad.txt",Sprintf("uncondupper := %o;",uncondupper));
+PrintFile("stillbad.txt",Sprintf("condlower := %o;",condlower));
+PrintFile("stillbad.txt",Sprintf("condupper := %o;",condupper));
+
+quit;

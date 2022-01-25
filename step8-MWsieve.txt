@@ -1,0 +1,287 @@
+// This script does the Mordell-Weil sieve using generators for
+// the 18639 elliptic curves. It reads the file allgens.txt
+// and it writes output to stdout.
+
+load "allgens.txt";
+
+ruledout:=[];
+procedure changetheN(N, ~GG, ~curgoodlist,k,~allgens,~ruledout, map, curtime);
+
+  elist := [EllipticCurve([0,0,0,0,k]), EllipticCurve([0,0,0,0,4*k]), EllipticCurve([0,0,0,0,-1*k^2]),
+   EllipticCurve([0,0,0,0,16*k^2]), EllipticCurve([0,0,0,0,k^3])];
+  
+  E := elist[map];
+
+  plist := [ x : x in PrimesUpTo(Max(331,40*N)) | (x ge 5) and (k mod x ne 0)];
+
+  for p in plist do
+    Ep := ChangeRing(E,GF(p));
+    A, happymap := AbelianGroup(Ep);
+    h := hom<A -> A | [N*A.i : i in [1..#Generators(A)]]>;
+    // This makes the homomorphism from A to itself that sends each generator x to Nx.
+    Q, quomap := quo<A | Image(h)>;
+    //Q is A/NA
+
+    //this makes a dictionary where the input is the image of a in E(Fp) and the output is an element a in A 
+    table := AssociativeArray();
+    for a in A do
+      table[happymap(a)] := a;
+    end for;
+    //make list of the happy map points
+    happymappts:=[];
+    for a in A do
+      Append(~happymappts,happymap(a));
+    end for;
+
+    R<x,y,z> := PolynomialRing(Rationals(),3);
+    C := Curve(ProjectiveSpace(Rationals(),2),x^6+y^6-k*z^6);
+    Cp := ChangeRing(C,GF(p));
+    Ep := ChangeRing(E,GF(p));
+    rp := RationalPoints(Cp);
+    
+    
+    if map eq 1 then
+      phi1 := map<Cp -> Ep | [-Cp.1^2*Cp.3, Cp.2^3, Cp.3^3]>;
+    end if;
+    if map eq 2 then
+      phi1 := map<Cp -> Ep | [Cp.1^4*Cp.3*Cp.2, (2*k*Cp.3^6-Cp.1^6), Cp.3^3*Cp.2^3]>;
+    end if;
+    if map eq 3 then
+      phi1 := map<Cp -> Ep | [k*Cp.2*Cp.3^2, k*Cp.1^3, Cp.2^3]>;
+    end if;
+    if map eq 4 then
+      phi1 := map<Cp -> Ep | [-4*Cp.1^2*Cp.2^2*Cp.3^2, 4*(Cp.1^6-Cp.2^6),Cp.3^6]>;
+    end if;
+    if map eq 5 then
+      phi1 := map<Cp -> Ep | [k*Cp.1^2*Cp.2, k^2*Cp.3^3, Cp.2^3]>;
+    end if;
+    imphi := [ phi1(r) : r in rp ];
+
+
+    //CptoEp=im(phi) - this gets rid of duplicates, 
+    imphi:=SetToSequence(SequenceToSet(imphi));
+
+    //now use table to map things in imphi from E(Fp) to A
+    //delete anything in happymappts that is not in im(phi) first
+    newhappymappts:=[];
+    for x in imphi do
+      if x in happymappts then
+        Append(~newhappymappts,x);
+      end if;
+    end for;
+    //now find image of elements of E(fp) in A, call this imphi2
+    imphi2:=[];
+    for x in [1..#newhappymappts] do
+      Append(~imphi2,table[newhappymappts[x]]);
+    end for;
+    
+
+    //now map imphi2 from A to A/NA=Q
+    quomaplist:=[];
+    for x in [1..#imphi2] do
+      Append(~quomaplist,quomap(imphi2[x]));
+    end for;
+    
+    //get rid of duplicates
+    quomaplist:=SetToSequence(SequenceToSet(quomaplist));
+    
+
+
+    //now want to run every element of curgoodlist and compute image in A/NA
+    //first curgoodlist to E(Fp)
+    
+
+    //this is finding the image of beta in A/NA an checking to see if it is in the image of alpha in A/NA
+    image:=[];
+    newgoodlist:=[];
+    for g in curgoodlist do
+      //g in Z/nZ^r, elts=numbers in r-tuple, then for-loop takes coeff and multi by gen reduced mod p
+      elts := Eltseq(g);
+      //&+ sums all the elements in the list
+      img:= &+[ elts[i]*(Ep!allgens[i]) : i in [1..#allgens]];
+      //img gives im of g in Z/nZ^r in E(Fp) 
+
+      //now use table to map points in E(Fp) to A
+      imginA:=table[img];
+
+      //now map from A to A/NA
+      imginANA:=quomap(imginA);
+      Append(~image,imginANA);
+
+      if imginANA in quomaplist then
+        Append(~newgoodlist,g);
+      end if;
+
+    end for;
+
+    oldsize := #curgoodlist;
+    curgoodlist := newgoodlist;
+    if (#curgoodlist lt oldsize) then
+      printf "After analyzing p = %o with N = %o, there are %o elements that are good.\n",p,N,#curgoodlist;
+    end if;  
+    if #curgoodlist eq 0 then
+      Append(~ruledout,k);
+      printf "We're done with %o at N = %o using the prime p = %o. Total time = %o.\n",k,N,p,Cputime(curtime);
+      break;
+    end if;
+  end for;
+end procedure;
+
+procedure modbyn(GG1,curgoodlist,GG2,N1,N2,allgens,~newnewlist)
+  //takes GG2 (mod N2) and makes mod N1
+  if #Generators(GG2) eq #Generators(GG1) then
+    redmap:=hom< GG2 -> GG1 |[ GG2.i -> GG1.i : i in [1..#allgens]]>;
+  else
+    redmap:=hom< GG2 -> GG1 |[ GG2.i -> GG1.i : i in [1..#Generators(GG1)]] cat [ GG2.#allgens -> GG1!0]>;
+  end if;  
+
+  //takes stuff in curgood N2 checks to see if permissible from N1
+  newnewlist:=[];
+  K := Kernel(redmap);
+  for x in curgoodlist do
+    for k in K do
+      Append(~newnewlist,(x@@redmap)+k);
+    end for;
+  end for;
+  //newnewlist is now curgoodlist for GG2 which is mod N2
+end procedure;
+
+//takes element in allgens list and gives the kgenlist (generators for that elliptic curve)
+//allgen[k][1] is actual k
+//allgens[k][2] is the curve
+//#kgenlist is number of gen
+procedure getallgens(k,~kgenlist,~torgp)
+    //map to E_k
+    if allgens[k][2] eq 1 then
+      kgenlist:=[];
+      E1 := EllipticCurve([0,0,0,0,(allgens[k][1])]);
+      for x in [1..#allgens[k][3]] do
+        Append(~kgenlist, E1 ! allgens[k][3][x]);
+      end for;
+      kgenlist := ReducedBasis(kgenlist);
+      torgp, tormp := TorsionSubgroup(E1);
+      if #torgp eq 1 then 
+        Append(~kgenlist, tormp(torgp.0));
+      else
+        Append(~kgenlist, tormp(torgp.1));
+      end if;
+    end if;
+
+    //map to E_4k
+    if allgens[k][2] eq 2 then
+      kgenlist:=[];
+      E2 := EllipticCurve([0,0,0,0,4*(allgens[k][1])]);
+      for x in [1..#allgens[k][3]] do
+        Append(~kgenlist, E2 ! allgens[k][3][x]);
+      end for;
+      kgenlist := ReducedBasis(kgenlist);
+      torgp, tormp := TorsionSubgroup(E2);
+      if #torgp eq 1 then 
+        Append(~kgenlist, tormp(torgp.0));
+      else
+        Append(~kgenlist, tormp(torgp.1));
+      end if;
+    end if;
+
+    //map to E_-k^2
+    if allgens[k][2] eq 3 then
+      kgenlist:=[];
+      E3 := EllipticCurve([0,0,0,0,-1*(allgens[k][1])^2]);
+      for x in [1..#allgens[k][3]] do
+        Append(~kgenlist, E3 ! allgens[k][3][x]);
+      end for;
+      kgenlist := ReducedBasis(kgenlist);
+      torgp, tormp := TorsionSubgroup(E3);
+      if #torgp eq 1 then 
+        Append(~kgenlist, tormp(torgp.0));
+      else
+        Append(~kgenlist, tormp(torgp.1));
+      end if;
+    end if;
+
+    //map to E_16k^2
+    if allgens[k][2] eq 4 then
+      kgenlist:=[];
+      E4 := EllipticCurve([0,0,0,0,16*(allgens[k][1])^2]);
+      if #TorsionSubgroup(E4) ne 1 and #TorsionSubgroup(E4) ne 2 then
+        print(k);
+        print(TorsionSubgroup(E4));
+      end if;
+      for x in [1..#allgens[k][3]] do
+        Append(~kgenlist, E4 ! allgens[k][3][x]);
+      end for;
+      kgenlist := ReducedBasis(kgenlist);
+      torgp, tormp := TorsionSubgroup(E4);
+      if #torgp eq 1 then 
+        Append(~kgenlist, tormp(torgp.0));
+      else
+        Append(~kgenlist, tormp(torgp.1));
+      end if;
+    end if;
+
+    //map to E_k^3
+    if allgens[k][2] eq 5 then
+      kgenlist:=[];
+      E5 := EllipticCurve([0,0,0,0,(allgens[k][1])^3]);
+      if #TorsionSubgroup(E5) ne 1 and #TorsionSubgroup(E5) ne 2 then
+        print(k);
+        print(TorsionSubgroup(E5));
+      end if;
+      for x in [1..#allgens[k][3]] do
+        Append(~kgenlist, E5 ! allgens[k][3][x]);
+      end for;
+      kgenlist := ReducedBasis(kgenlist);
+      torgp, tormp := TorsionSubgroup(E5);
+      if #torgp eq 1 then 
+        Append(~kgenlist, tormp(torgp.0));
+      else
+        Append(~kgenlist, tormp(torgp.1));
+      end if;
+    end if;
+end procedure;
+
+
+ruledout:=[];
+for k in [1..#allgens] do
+  curtime := Cputime();
+  kgenlist:=[];
+  torgp:=[];
+  getallgens(k,~kgenlist,~torgp);
+  printf "Working on k = %o, curve number %o, rank = %o.\n",allgens[k][1],allgens[k][2],#kgenlist-1;
+  
+  //this creates the list of possible N's (called numba)
+  N:=[2,2,3,7,2,3];
+  Numba:=[N[1]];
+  for i in [2..#N] do
+    Numba[1]:=N[1];
+    Numba[i]:=Numba[i-1]*N[i];
+  end for;
+  //Numba;
+
+  //this creates the list of corresponding abelian groups GG to the N's
+  GG:=[];
+  for i in [1..#N] do
+    GG[i]:= AbelianGroup([Numba[i] : x in [1..#kgenlist-1]] cat [GCD(#torgp,Numba[i])]);
+  end for;
+  //GG;
+
+  //this does ALL THE STUFFFFFF!!!!!! (that i commented out below)
+  curgoodlist := [ g : g in GG[1] ];
+  changetheN(Numba[1], ~GG[1], ~curgoodlist,allgens[k][1],~kgenlist,~ruledout,allgens[k][2],curtime);
+  for i in [1..#N-1] do
+    //#curgoodlist;
+    if #curgoodlist eq 0 then
+      break;
+    end if;
+    printf "Increasing modulus to %o.\n",Numba[i+1];
+    modbyn(GG[i],curgoodlist,GG[i+1],Numba[i],Numba[i+1],kgenlist,~curgoodlist);
+    printf "Starting with %o good elements.\n",#curgoodlist;
+    changetheN(Numba[i+1], ~GG[i+1], ~curgoodlist,allgens[k][1],~kgenlist,~ruledout,allgens[k][2],curtime);
+    if #curgoodlist eq 0 then
+      break;
+    end if;
+  end for;
+end for;
+
+printf "All done.\n";
+quit;

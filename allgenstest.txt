@@ -1,0 +1,19 @@
+// Test that we actually get points on all the elliptic curves
+// and that the number of points given is the appropriate number.
+
+load "allgens.txt";
+for i in [1..#allgens] do
+  k := allgens[i][1];
+  const := [ k, 4*k, -k^2, 16*k^2, k^3, -4*k^4 ];
+  E := EllipticCurve([0,0,0,0,const[allgens[i][2]]]);
+  pts := [ E!allgens[i][3][j] : j in [1..#allgens[i][3]]];
+  torsorder := #TorsionSubgroup(E);
+  r := #ReducedBasis(pts);
+  if (torsorder eq 1) and (#pts ne r) then
+    printf "Error! Point number doesn't match for k = %o.\n",k;
+  end if;
+  if (torsorder gt 1) and (#pts ne (r+1)) then
+    printf "Error! Point number doesn't match for k = %o.\n",k;
+  end if;
+  printf "For k = %o, curve = %o, rank = %o, tors = %o.\n",k,allgens[i][2],r,torsorder;
+end for;

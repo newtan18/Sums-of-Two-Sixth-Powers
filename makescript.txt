@@ -1,0 +1,8 @@
+// This Magma script creates a shell script for running step4.
+
+load "step3remaining.txt";
+outfile := "step4script.txt";
+for i in [1..#badk] do
+  PrintFile(outfile,Sprintf("magma k:=%o step4-findMW.txt > step4logs/%o.out",badk[i],badk[i]));
+end for;
+quit;

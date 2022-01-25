@@ -1,0 +1,488 @@
+Magma V2.26-9     Fri Jan 21 2022 19:42:01 on weil     [Seed = 3191118937]
+
++-------------------------------------------------------------------+
+|       This copy of Magma has been made available through a        |
+|                   generous initiative of the                      |
+|                                                                   |
+|                         Simons Foundation                         |
+|                                                                   |
+| covering U.S. Colleges, Universities, Nonprofit Research entities,|
+|               and their students, faculty, and staff              |
++-------------------------------------------------------------------+
+
+Type ? for help.  Type <Ctrl>-D to quit.
+
+Loading file "step7-2descents.txt"
+For k = 49897450, the Minkowski bound is 4890649.
+Doing two descent.
+Obtaining class group for
+x^3 + 49897450
+GRH bound = 333
+Starting core class group computation with bound 333
+Expected number of random elements per relation: 6
+    Degree = 3
+    Discriminant = -298770661980300 (15 digits)
+    Sqrt(|disc|) = 17284983 (25 bits)
+    # of automorphisms: 1
+    Factor base creation time: 0.005[r]
+    Factor base up to norm 333 contains 81 primes over 50 rational primes
+    There are 19 trivial relations
+
+    INITIALIZATION PHASE DONE -- total time: 0.016[r]
+
+
+    FULL RANK RELATION MATRIX -- search time: 0.006[r]
+
+    Total class group computation time: 0.041[r]
+    Admin time: 0.001[r]
+Finished core class group computation, time: 0.044[r]
+Class group proof phase
+    Class group proof: need to check primes from 333 to 4890649
+    Approximately 341539 prime numbers to check.
+
+    WARNING
+    Class group unconditional proof is expensive.
+    Hint: to obtain class group proven under GRH, input
+    > SetClassGroupBounds("GRH");
+    before starting the current calculation.
+
+Class group proof time: 26.309
+Hermite form of relation matrix (no trans):
+Hermite time: 0.000
+SUnitGroup : #S = 3 (0 new)
+Rank bound before Cassels-Tate is 0.
+Doing the Cassels-Tate pairing.
+Rank bound after Cassels-Tate is 0.
+For k = 117092530, the Minkowski bound is 57383551.
+Doing two descent.
+Obtaining class group for
+x^3 + 117092530
+GRH bound = 878
+Starting core class group computation with bound 878
+Expected number of random elements per relation: 6
+    Degree = 3
+    Discriminant = -41131981745402700 (17 digits)
+    Sqrt(|disc|) = 202810211 (28 bits)
+    # of automorphisms: 1
+    Factor base creation time: 0.005[r]
+    Factor base up to norm 878 contains 149 primes over 100 rational primes
+    There are 30 trivial relations
+
+    INITIALIZATION PHASE DONE -- total time: 0.009
+
+
+    FULL RANK RELATION MATRIX -- search time: 0.015[r]
+
+    Total class group computation time: 0.039[r]
+    Admin time: 0.000
+Finished core class group computation, time: 0.039
+Class group proof phase
+    Class group proof: need to check primes from 878 to 57383551
+    Approximately 3416407 prime numbers to check.
+
+    WARNING
+    Class group unconditional proof is expensive.
+    Hint: to obtain class group proven under GRH, input
+    > SetClassGroupBounds("GRH");
+    before starting the current calculation.
+
+Class group proof time: 3327.079
+Hermite form of relation matrix (no trans):
+Hermite time: 0.000
+SUnitGroup : #S = 3 (0 new)
+Rank bound before Cassels-Tate is 1.
+Doing the Cassels-Tate pairing.
+Rank bound after Cassels-Tate is 1.
+For k = 120813050, the Minkowski bound is 5920686.
+Doing two descent.
+Obtaining class group for
+x^3 + 483252200
+GRH bound = 568
+Starting core class group computation with bound 568
+Expected number of random elements per relation: 5
+    Degree = 3
+    Discriminant = -437873791509075 (15 digits)
+    Sqrt(|disc|) = 20925434 (25 bits)
+    # of automorphisms: 1
+    Factor base creation time: 0.006[r]
+    Factor base up to norm 568 contains 101 primes over 69 rational primes
+    There are 21 trivial relations
+
+    INITIALIZATION PHASE DONE -- total time: 0.010
+
+
+    FULL RANK RELATION MATRIX -- search time: 0.009[r]
+
+    Total class group computation time: 0.030
+    Admin time: 0.000
+Finished core class group computation, time: 0.030
+Class group proof phase
+    Class group proof: need to check primes from 568 to 5920686
+    Approximately 407987 prime numbers to check.
+
+    WARNING
+    Class group unconditional proof is expensive.
+    Hint: to obtain class group proven under GRH, input
+    > SetClassGroupBounds("GRH");
+    before starting the current calculation.
+
+Class group proof time: 48.599
+Hermite form of relation matrix (no trans):
+Hermite time: 0.000
+SUnitGroup : #S = 4 (0 new)
+Rank bound before Cassels-Tate is 0.
+Doing the Cassels-Tate pairing.
+Rank bound after Cassels-Tate is 0.
+For k = 128327978, the Minkowski bound is 31444854.
+Doing two descent.
+Obtaining class group for
+x^3 + 4117017484392121
+GRH bound = 549
+Starting core class group computation with bound 549
+Expected number of random elements per relation: 7
+    Degree = 3
+    Discriminant = -12351052453176363 (17 digits)
+    Sqrt(|disc|) = 111135288 (27 bits)
+    # of automorphisms: 1
+    Factor base creation time: 0.000
+    Factor base up to norm 549 contains 119 primes over 73 rational primes
+    There are 26 trivial relations
+
+    INITIALIZATION PHASE DONE -- total time: 0.009
+
+
+    FULL RANK RELATION MATRIX -- search time: 0.009[r]
+
+    Total class group computation time: 0.030
+    Admin time: 0.000
+Finished core class group computation, time: 0.030
+Class group proof phase
+    Class group proof: need to check primes from 549 to 31444854
+    Approximately 1942014 prime numbers to check.
+
+    WARNING
+    Class group unconditional proof is expensive.
+    Hint: to obtain class group proven under GRH, input
+    > SetClassGroupBounds("GRH");
+    before starting the current calculation.
+
+Class group proof time: 648.799
+Hermite form of relation matrix (no trans):
+Hermite time: 0.000
+SUnitGroup : #S = 6 (0 new)
+Rank bound before Cassels-Tate is 4.
+Doing the Cassels-Tate pairing.
+Rank bound after Cassels-Tate is 0.
+For k = 130187450, the Minkowski bound is 6380098.
+Doing two descent.
+Obtaining class group for
+x^3 + 520749800
+GRH bound = 458
+Starting core class group computation with bound 458
+Expected number of random elements per relation: 5
+    Degree = 3
+    Discriminant = -508463164125075 (15 digits)
+    Sqrt(|disc|) = 22549127 (25 bits)
+    # of automorphisms: 1
+    Factor base creation time: 0.005[r]
+    Factor base up to norm 458 contains 98 primes over 62 rational primes
+    There are 22 trivial relations
+
+    INITIALIZATION PHASE DONE -- total time: 0.013[r]
+
+
+    FULL RANK RELATION MATRIX -- search time: 0.008[r]
+
+    Total class group computation time: 0.029[r]
+    Admin time: 0.001[r]
+Finished core class group computation, time: 0.032[r]
+Class group proof phase
+    Class group proof: need to check primes from 458 to 6380098
+    Approximately 437378 prime numbers to check.
+
+    WARNING
+    Class group unconditional proof is expensive.
+    Hint: to obtain class group proven under GRH, input
+    > SetClassGroupBounds("GRH");
+    before starting the current calculation.
+
+Class group proof time: 49.449
+Hermite form of relation matrix (no trans):
+Hermite time: 0.000[r]
+SUnitGroup : #S = 4 (0 new)
+Rank bound before Cassels-Tate is 0.
+Doing the Cassels-Tate pairing.
+Rank bound after Cassels-Tate is 0.
+For k = 149477050, the Minkowski bound is 14650847.
+Doing two descent.
+Obtaining class group for
+x^3 + 149477050
+GRH bound = 631
+Starting core class group computation with bound 631
+Expected number of random elements per relation: 5
+    Degree = 3
+    Discriminant = -2681206617204300 (16 digits)
+    Sqrt(|disc|) = 51780369 (26 bits)
+    # of automorphisms: 1
+    Factor base creation time: 0.004[r]
+    Factor base up to norm 631 contains 118 primes over 78 rational primes
+    There are 24 trivial relations
+
+    INITIALIZATION PHASE DONE -- total time: 0.009
+
+
+    FULL RANK RELATION MATRIX -- search time: 0.010
+
+    Total class group computation time: 0.029
+    Admin time: 0.000
+Finished core class group computation, time: 0.029
+Class group proof phase
+    Class group proof: need to check primes from 631 to 14650847
+    Approximately 949884 prime numbers to check.
+
+    WARNING
+    Class group unconditional proof is expensive.
+    Hint: to obtain class group proven under GRH, input
+    > SetClassGroupBounds("GRH");
+    before starting the current calculation.
+
+Class group proof time: 217.000
+Hermite form of relation matrix (no trans):
+Hermite time: 0.002[r]
+SUnitGroup : #S = 3 (0 new)
+Rank bound before Cassels-Tate is 0.
+Doing the Cassels-Tate pairing.
+Rank bound after Cassels-Tate is 0.
+For k = 160631290, the Minkowski bound is 78720597.
+Doing two descent.
+Obtaining class group for
+x^3 + 160631290
+GRH bound = 453
+Starting core class group computation with bound 453
+Expected number of random elements per relation: 10
+    Degree = 3
+    Discriminant = -77407233981192300 (17 digits)
+    Sqrt(|disc|) = 278221555 (29 bits)
+    # of automorphisms: 1
+    Factor base creation time: 0.000
+    Factor base up to norm 453 contains 100 primes over 63 rational primes
+    There are 23 trivial relations
+    Single large prime bound = 1812
+
+    INITIALIZATION PHASE DONE -- total time: 0.009[r]
+
+
+    FULL RANK RELATION MATRIX -- search time: 0.008[r]
+
+    Total class group computation time: 0.019
+    Admin time: 0.002[r]
+Finished core class group computation, time: 0.028[r]
+Class group proof phase
+    Class group proof: need to check primes from 453 to 78720597
+    Approximately 4599749 prime numbers to check.
+
+    WARNING
+    Class group unconditional proof is expensive.
+    Hint: to obtain class group proven under GRH, input
+    > SetClassGroupBounds("GRH");
+    before starting the current calculation.
+
+Class group proof time: 2831.789
+Hermite form of relation matrix (no trans):
+Hermite time: 0.000
+SUnitGroup : #S = 3 (0 new)
+Rank bound before Cassels-Tate is 1.
+Doing the Cassels-Tate pairing.
+Rank bound after Cassels-Tate is 1.
+Finding generators for k = 49897450.
+Obtaining class group for
+x^3 + 49897450
+GRH bound = 333
+Starting core class group computation with bound 333
+Expected number of random elements per relation: 6
+    Degree = 3
+    Discriminant = -298770661980300 (15 digits)
+    Sqrt(|disc|) = 17284983 (25 bits)
+    # of automorphisms: 1
+    Factor base creation time: 0.005[r]
+    Factor base up to norm 333 contains 81 primes over 50 rational primes
+    There are 19 trivial relations
+
+    INITIALIZATION PHASE DONE -- total time: 0.010
+
+
+    FULL RANK RELATION MATRIX -- search time: 0.004[r]
+
+    Total class group computation time: 0.020
+    Admin time: 0.001[r]
+Finished core class group computation, time: 0.026[r]
+Class group proof phase
+Class group proof time: 0.000
+Hermite form of relation matrix (no trans):
+Hermite time: 0.000
+SUnitGroup : #S = 3 (0 new)
+Finding generators for k = 117092530.
+Obtaining class group for
+x^3 + 117092530
+GRH bound = 878
+Starting core class group computation with bound 878
+Expected number of random elements per relation: 6
+    Degree = 3
+    Discriminant = -41131981745402700 (17 digits)
+    Sqrt(|disc|) = 202810211 (28 bits)
+    # of automorphisms: 1
+    Factor base creation time: 0.004[r]
+    Factor base up to norm 878 contains 149 primes over 100 rational primes
+    There are 30 trivial relations
+
+    INITIALIZATION PHASE DONE -- total time: 0.010
+
+
+    FULL RANK RELATION MATRIX -- search time: 0.009
+
+    Total class group computation time: 0.050
+    Admin time: 0.003[r]
+Finished core class group computation, time: 0.057[r]
+Class group proof phase
+Class group proof time: 0.000
+Hermite form of relation matrix (no trans):
+Hermite time: 0.000
+SUnitGroup : #S = 3 (0 new)
+Finding generators for k = 120813050.
+Obtaining class group for
+x^3 + 483252200
+GRH bound = 568
+Starting core class group computation with bound 568
+Expected number of random elements per relation: 5
+    Degree = 3
+    Discriminant = -437873791509075 (15 digits)
+    Sqrt(|disc|) = 20925434 (25 bits)
+    # of automorphisms: 1
+    Factor base creation time: 0.000
+    Factor base up to norm 568 contains 101 primes over 69 rational primes
+    There are 21 trivial relations
+
+    INITIALIZATION PHASE DONE -- total time: 0.010
+
+
+    FULL RANK RELATION MATRIX -- search time: 0.011[r]
+
+    Total class group computation time: 0.030
+    Admin time: 0.002[r]
+Finished core class group computation, time: 0.034[r]
+Class group proof phase
+Class group proof time: 0.000
+Hermite form of relation matrix (no trans):
+Hermite time: 0.000
+SUnitGroup : #S = 4 (0 new)
+Finding generators for k = 128327978.
+Obtaining class group for
+x^3 + 4117017484392121
+GRH bound = 549
+Starting core class group computation with bound 549
+Expected number of random elements per relation: 7
+    Degree = 3
+    Discriminant = -12351052453176363 (17 digits)
+    Sqrt(|disc|) = 111135288 (27 bits)
+    # of automorphisms: 1
+    Factor base creation time: 0.000
+    Factor base up to norm 549 contains 119 primes over 73 rational primes
+    There are 26 trivial relations
+
+    INITIALIZATION PHASE DONE -- total time: 0.009
+
+
+    FULL RANK RELATION MATRIX -- search time: 0.009[r]
+
+    Total class group computation time: 0.029[r]
+    Admin time: 0.004[r]
+Finished core class group computation, time: 0.034[r]
+Class group proof phase
+Class group proof time: 0.000
+Hermite form of relation matrix (no trans):
+Hermite time: 0.000
+SUnitGroup : #S = 6 (0 new)
+Finding generators for k = 130187450.
+Obtaining class group for
+x^3 + 520749800
+GRH bound = 458
+Starting core class group computation with bound 458
+Expected number of random elements per relation: 5
+    Degree = 3
+    Discriminant = -508463164125075 (15 digits)
+    Sqrt(|disc|) = 22549127 (25 bits)
+    # of automorphisms: 1
+    Factor base creation time: 0.000
+    Factor base up to norm 458 contains 98 primes over 62 rational primes
+    There are 22 trivial relations
+
+    INITIALIZATION PHASE DONE -- total time: 0.011[r]
+
+
+    FULL RANK RELATION MATRIX -- search time: 0.009[r]
+
+    Total class group computation time: 0.028[r]
+    Admin time: 0.003[r]
+Finished core class group computation, time: 0.031[r]
+Class group proof phase
+Class group proof time: 0.000
+Hermite form of relation matrix (no trans):
+Hermite time: 0.000
+SUnitGroup : #S = 4 (0 new)
+Finding generators for k = 149477050.
+Obtaining class group for
+x^3 + 149477050
+GRH bound = 631
+Starting core class group computation with bound 631
+Expected number of random elements per relation: 5
+    Degree = 3
+    Discriminant = -2681206617204300 (16 digits)
+    Sqrt(|disc|) = 51780369 (26 bits)
+    # of automorphisms: 1
+    Factor base creation time: 0.005[r]
+    Factor base up to norm 631 contains 118 primes over 78 rational primes
+    There are 24 trivial relations
+
+    INITIALIZATION PHASE DONE -- total time: 0.009
+
+
+    FULL RANK RELATION MATRIX -- search time: 0.010
+
+    Total class group computation time: 0.029
+    Admin time: 0.000
+Finished core class group computation, time: 0.029
+Class group proof phase
+Class group proof time: 0.000
+Hermite form of relation matrix (no trans):
+Hermite time: 0.001[r]
+SUnitGroup : #S = 3 (0 new)
+Finding generators for k = 160631290.
+Obtaining class group for
+x^3 + 160631290
+GRH bound = 453
+Starting core class group computation with bound 453
+Expected number of random elements per relation: 10
+    Degree = 3
+    Discriminant = -77407233981192300 (17 digits)
+    Sqrt(|disc|) = 278221555 (29 bits)
+    # of automorphisms: 1
+    Factor base creation time: 0.000
+    Factor base up to norm 453 contains 100 primes over 63 rational primes
+    There are 23 trivial relations
+    Single large prime bound = 1812
+
+    INITIALIZATION PHASE DONE -- total time: 0.010
+
+
+    FULL RANK RELATION MATRIX -- search time: 0.011[r]
+
+    Total class group computation time: 0.029
+    Admin time: 0.003[r]
+Finished core class group computation, time: 0.033[r]
+Class group proof phase
+Class group proof time: 0.000
+Hermite form of relation matrix (no trans):
+Hermite time: 0.000
+SUnitGroup : #S = 3 (0 new)
+
+Total time: 7153.689 seconds, Total memory usage: 85.16MB

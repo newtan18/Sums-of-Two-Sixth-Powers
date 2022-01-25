@@ -1,0 +1,70 @@
+// This script takes the outputs of the step4, step5, step6, and step7
+// scripts and complies them into a single file, allgens.txt
+// that gives for each k, an elliptic curve (specified by an index between
+// 1 and 6), and generators for a finite-index subgroup of the MW group
+// of that elliptic curve (p-saturated for p <= 100).
+
+load "gens.txt";
+load "gens2.txt";
+load "gens2b.txt";
+load "gens3.txt";
+load "gens4.txt";
+
+klist1 := [ gens[i][1] : i in [1..#gens]];
+klist2 := [ gens2[i][1] : i in [1..#gens2]];
+klist2b := [ gens2b[i][1] : i in [1..#gens2b]];
+klist3 := [ gens3[i][1] : i in [1..#gens3]];
+klist4 := [ gens4[i][1] : i in [1..#gens4]];
+
+// List of k's for which one curve was found to have rank zero
+// in step7
+rankzerok := [ 49897450, 120813050, 128327978, 130187450, 149477050 ];
+
+allks := Sort(SetToSequence(SequenceToSet(klist1 cat klist2 cat klist2b cat klist3 cat klist4)));
+
+// There were 19508 values of k at the end of step 3.
+// Step 4 discovered 864 values of k for which one of the curves had rank zero.
+// Step 7 discovered 5 more.
+// Therefore, the final allgens.txt file should have generators for
+// 19508-864-5 = 18639 k's.
+
+outfile := "allgens.txt";
+PrintFile(outfile,"allgens := [");
+maxk := Max(allks);
+for k in allks do
+  if (not (k in rankzerok)) then
+    whereis := [ k in klist1, k in klist2, k in klist2b, k in klist3, k in klist4 ];
+    ind := Max([ i : i in [1..5] | whereis[i] eq true ]);
+    // Read the generators from the latest stage it occurs.
+    if (ind eq 1) then
+      ind2 := Index(klist1,k);
+      curveind := gens[ind2][2];
+      if (curveind eq 3) then
+        curveind := 5;
+      end if;
+      entry := <gens[ind2][1],curveind,gens[ind2][3]>;
+    end if;
+    if (ind eq 2) then
+      ind2 := Index(klist2,k);
+      entry := <gens2[ind2][1],gens2[ind2][2],gens2[ind2][3]>;
+    end if;
+    if (ind eq 3) then
+      ind2 := Index(klist2b,k);
+      entry := <gens2b[ind2][1],gens2b[ind2][2],gens2b[ind2][3]>;
+    end if;
+    if (ind eq 4) then
+      ind2 := Index(klist3,k);
+      entry := <gens3[ind2][1],gens3[ind2][2],gens3[ind2][3]>;
+    end if;
+    if (ind eq 5) then
+      ind2 := Index(klist4,k);
+      entry := <gens4[ind2][1],gens4[ind2][2],gens4[ind2][3]>;
+    end if;
+    if (k ne maxk) then     
+      PrintFile(outfile,Sprintf("%o,",entry));
+    else
+      PrintFile(outfile,Sprintf("%o",entry));
+    end if;
+  end if;
+end for; 
+PrintFile(outfile,"];");

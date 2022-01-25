@@ -1,0 +1,73 @@
+// This script reads in the list of all k's that need to be dealt with
+// as well as the odd k's that remain after step 2.
+
+// It computes 3-isogeny Selmer groups to bound the ranks of the elliptic curves
+// in the set { E_k, E_4k, E_{-k^2}, E_{16k^2}, E_{-4k^4} } but only
+// computes these for curves with root number equal to 1.
+
+// The k's that are not able to be ruled out are written to step3remaining.txt
+
+load "biglist.txt";
+load "oddk.txt";
+
+iso3rank := function(E)
+  // Get an upper bound on the rank via 3-isogeny descent.
+  A1, mp1, A2, mp2, mp3 := ThreeIsogenySelmerGroups(E);
+  // Check kernels to see if there are rational points.
+  rnk := 0;
+  K1 := #RationalPoints(Kernel(mp3));
+  K2 := #RationalPoints(Kernel(DualIsogeny(mp3)));
+  if (K1 gt 1) or (K2 gt 1) then
+    rnk := -1;
+  end if;
+  rnk := rnk + Rank(A1) + Rank(A2);
+  return rnk;
+end function;
+
+ktotest := [ k : k in biglist | (k mod 2 eq 0)] cat notruledout;
+ktotest := Sort(ktotest);
+
+maxt := 0;
+maxk := 0;
+badk := [];
+for i in [1..#ktotest] do
+  k := ktotest[i];
+    printf "k = %o.\n",k;
+    Elist := [ EllipticCurve([0,0,0,0,k]), EllipticCurve([0,0,0,0,4*k]),
+    EllipticCurve([0,0,0,0,-k^2]), EllipticCurve([0,0,0,0,16*k^2]),
+    EllipticCurve([0,0,0,0,-4*k^4]) ];
+    done := false;
+    good := false;
+    it := 1;
+    pairs := [];
+    t := Cputime();
+    while (done eq false) do
+      curE := Elist[it];
+      rn := RootNumber(curE);
+      if (rn eq 1) then
+        ir := iso3rank(curE);
+	Append(~pairs,[it,ir]);
+	if (ir eq 0) then
+	  done := true;
+	  good := true;
+	end if;
+      end if;
+      it := it + 1;
+      if (it gt 5) then
+        done := true;
+      end if;
+    end while;
+    t2 := Cputime(t);
+    if (t2 gt maxt) then
+      maxt := t2;
+      maxk := k;
+    end if;
+    printf "For k = %o ranks are %o. Time taken was %o.\n",k,pairs,t2;
+    if (good eq false) then
+      Append(~badk,k);
+    end if;
+end for;
+printf "Done! The k that took the longest was %o. It took %o sec.\n",maxk,maxt;
+
+PrintFile("step3remaining.txt",Sprintf("badk := %o;",badk));
+quit;

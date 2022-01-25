@@ -1,0 +1,28 @@
+Magma V2.26-9     Mon Jan 17 2022 13:28:33 on weil     [Seed = 496616485]
+
++-------------------------------------------------------------------+
+|       This copy of Magma has been made available through a        |
+|                   generous initiative of the                      |
+|                                                                   |
+|                         Simons Foundation                         |
+|                                                                   |
+| covering U.S. Colleges, Universities, Nonprofit Research entities,|
+|               and their students, faculty, and staff              |
++-------------------------------------------------------------------+
+
+Type ? for help.  Type <Ctrl>-D to quit.
+
+Loading file "step2-wald.txt"
+Computing unary theta series.
+Computing binary theta series 1.
+Computing binary theta series 2.
+Computing binary theta series 3.
+Computing ternary theta series 1.
+Computing ternary theta series 2.
+Computing ternary theta series 3.
+Computing ternary theta series 4.
+Computing ternary theta series 5.
+Computing ternary theta series 6.
+Loading "biglist.txt"
+
+Total time: 568.819 seconds, Total memory usage: 17989.66MB

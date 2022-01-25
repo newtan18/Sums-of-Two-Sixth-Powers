@@ -1,0 +1,135 @@
+// This Magma script takes no input and returns a list of values of k for which
+// i) k is sixth-power free,
+// ii) k not a sum of two integer sixth powers, and
+// iii) C_k is locally solvable for all primes p.
+// The resulting list of k's is in the file "biglist.txt";
+
+// We use that in order for C_k to be locally solvable, k must be a sum of
+// two squares. Here are some considerations for specific primes p.
+
+// p = 7: p doesn't divide k, so we need x^6 + y^6 = k with
+// x and y in Z_7 with not both a multiple of 7. This gives x^6 + y^6 =
+// 1 or 2 mod 7.
+
+// p = 2: Suppose that x^6 + y^6 = k*z^6 with (x : y : z) in P^2(Q_2)
+// with x, y, z in Z_2 and 2 not dividing all three coordinates.
+// If the right hand side is a multiple of 4, then x and y must both be even.
+// Then k being sixth power free forces 2 to divide z. This is a contradiction.
+// So z must be odd if k is sixth power free. This implies that
+// k = x^6 + y^6 in Z_2. An element of Z_2 is a sixth power if and only if
+// it is 1 (mod 8) and so this implies that k = 1 or 2 mod 8.
+
+// p = 3: We can't have p | k, and so we need x, y in Z_3 not both multiples
+// of 3. Euler's theorem gives x^6 = 1 (mod 9) if gcd(x,9) = 1,
+// and if 3 | x, then x^6 = 0 (mod 9). So x^6 + y^6 = 1 or 2 mod 9.
+
+// If p > 3, then every element x = 1 (mod p) in Z_p is a sixth power by Hensel's lemma. Thus, we can determine whether C_k has local points in Q_p by looking
+// at k mod p.
+
+// If p = 2 (mod 3), then every element is a cube, and since every nonzero
+// k (mod p) is a sum of two squares, every k which is not zero mod p has
+// C_k locally solvable.
+
+// If p = 1 (mod 12), then k = 0 (mod p) is allowed since an element of order
+// 12 in F_p gives a smooth point on x^6 + y^6 = k*z^6 mod p.
+
+// If p = 7 (mod 12), then k = 0 (mod p) is not allowed. 
+
+bound := 164634912;
+t0 := Cputime();
+R<x,y,z> := PolynomialRing(Rationals(),3);
+goodlists := <>;
+for p in [13..400] do
+  if IsPrime(p) and (p mod 6 eq 1) then
+    printf "Testing local solvability of C_k mod %o.\n",p;
+    T := {};
+    for k in [1..p] do
+      f := x^6 + y^6 - k*z^6;
+      C := Curve(ProjectiveSpace(Rationals(),2),f);
+      if IsLocallySolvable(C,p) then
+        Include(~T,k mod p);
+      end if;
+    end for;
+    if #(T meet { i : i in [1..p-1]}) lt (p-1) then
+      Append(~goodlists,<p,Sort(SetToSequence(T))>);
+    end if;
+  end if;
+end for;
+
+goodks := [];
+
+// Make a list of primes <= sqrt(bound) that are 3 mod 4.
+primes3mod4 := [];
+for i in [3..Floor(Sqrt(bound))] do
+  if ((i mod 4) eq 3) then
+    if IsPrime(i) then
+      Append(~primes3mod4,i);
+    end if;
+  end if;
+end for;
+
+primesixth := [ p : p in [5..Floor(bound^(1/6))] | IsPrime(p) and (p mod 4 eq 1) ];
+
+// Make list of integers that are sums of two integer sixth powers.
+sumoftwo := { x^6 + y^6 : x in [0..Floor(bound^(1/6))], y in [0..Floor(bound^(1/6))]};
+
+// We must have k = 1 or 2 (mod 7), (mod 8) and (mod 9).
+// This means that k = 504l + r, where r in { 1, 2, 65, 218, 226, 281, 289, 442 }
+
+rlist := [ 1, 2, 65, 218, 226, 281, 289, 442 ];
+for rind in [ 1..#rlist] do
+  r := rlist[rind];
+  printf "Round %o, testing k = %o mod 504.\n",rind,r;
+  printf "Current number of good k's is %o.\n",#goodks;
+  for l in [0..Floor((bound-r)/504)] do
+    k := 504*l + r;
+    good := true;
+    done := false;
+    smallpdone := false;
+    ind := 1;
+    while (smallpdone eq false) do
+      curp := goodlists[ind][1];
+      if not (k mod curp) in goodlists[ind][2] then
+        smallpdone := true;
+	done := true;
+	good := false;
+	//printf "k = %o ruled out mod %o.\n",k,curp;
+      end if;
+      ind := ind + 1;
+      if (ind gt #goodlists) then
+        smallpdone := true;
+      end if;
+    end while;
+    // Test for multiples of p^6.
+    if &or [ Valuation(k,p) ge 6 : p in primesixth] then
+      done := true;
+      good := false;
+    end if;
+    // Test for prime factors = 3 (mod 4).
+    ind := 1;
+    while (done eq false) do
+      if primes3mod4[ind]^2 gt k then
+        done := true;
+      end if;
+      if (k mod primes3mod4[ind]) eq 0 then
+        done := true;
+	good := false;
+      end if;
+      ind := ind + 1;
+      if (ind gt #primes3mod4) then
+        done := true;
+      end if;
+    end while;
+    // Remove integers that are a sum of two integer sixth powers.
+    if k in sumoftwo then
+      good := false;
+    end if;
+    if (good eq true) then
+      Append(~goodks,k);
+    end if;
+  end for;
+end for;
+goodks := Sort(goodks);
+printf "Total k's found = %o.\n",goodks;
+PrintFile("biglist.txt",Sprintf("biglist := %o;\n",goodks));
+printf "Total cpu time = %o sec.\n",Cputime(t0);
